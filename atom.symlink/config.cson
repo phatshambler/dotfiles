@@ -1,34 +1,103 @@
-'editor':
-  'showIndentGuide': true
-  'fontFamily': 'Menlo'
-  'fontSize': 15
-  'invisibles': {}
-'core':
-  'ignoredNames': [
-    '.bundle'
-    '.git'
-    'log'
-    'repositories'
-    'tmp'
-    'vendor'
-  ]
-  'themes': [
-    'unity-ui'
-    'glacier-syntax'
-  ]
-  'hideGitIgnoredFiles': true
-  'disabledPackages': [
-    'background-tips'
-    'exception-reporting'
-    'metrics'
-  ]
-'spell-check':
-  'grammars': [
-    'text.plain'
-    'source.gfm'
-    'text.git-commit'
-  ]
-'welcome':
-  'showOnStartup': false
-'release-notes':
-  'viewedVersion': '0.89.0'
+'global':
+  'editor':
+    'softWrap': true
+    'fontSize': 12
+    'showIndentGuide': true
+    'tabLength': 4
+    'nonWordCharacters': './\\\\()\\"\'-:,.;<>~!@#$%^&*|+=[]{}`~?'
+    'invisibles': {}
+  'core':
+    'projectHome': '/Users/dmongeau/Dropbox/Sites'
+    'disabledPackages': [
+      'language-java'
+      'language-toml'
+      'background-tips'
+      'bookmarks'
+      'markdown-preview'
+      'spell-check'
+      'archive-view'
+      'autoflow'
+      'autosave'
+      'bezier-curve-editor'
+      'go-to-line'
+      'open-on-github'
+      'Zen'
+      'atom-jshint'
+    ]
+    'themes': [
+      'atom-dark-ui'
+      'base16-tomorrow-dark-theme'
+    ]
+    'ignoredNames': [
+      '.git'
+      '.sass-cache'
+      '.DS_Store'
+      'composer.lock'
+    ]
+  'exception-reporting':
+    'userId': 'bf3ab42e-1c26-e9b9-141a-bbcd1e367d22'
+  'release-notes':
+    'viewedVersion': '0.92.0'
+  'welcome':
+    'showOnStartup': false
+  'metrics':
+    'userId': 'd4f04106661c7c892c48e7ea675a18896355e99a'
+  'atom-jshint':
+    'hintOnModify': false
+  'git-diff':
+    'showIconsInEditorGutter': true
+  'whitespace':
+    'removeTrailingWhitespace': false
+  'linter':
+    'lintOnChange': false
+    'showHightlighting': true
+    'showStatusBarWhenCursorIsInErrorRange': true
+    'showGutters': false
+  'tree-view':
+    'hideIgnoredNames': true
+  'dash':
+    'grammars':
+      'JavaScript': [
+        'nodejs'
+        'underscore'
+        'backbone'
+        'grunt'
+        'express'
+        'require'
+        'jquery'
+        'javascript'
+      ]
+      'HTML': [
+        'html'
+        'underscore'
+        'backbone'
+        'jquery'
+        'javascript'
+      ]
+      'ActionScript': [
+        'actionscript'
+      ]
+      'CSS': [
+        'css'
+        'bootstrap'
+      ]
+      'Shell Scripts': [
+        'bash'
+        'manpages'
+      ]
+      'SQL': [
+        'mysql'
+      ]
+      'SVG': [
+        'svg'
+      ]
+      'PHP': [
+        'php'
+        'laravel'
+      ]
+      'Sass': [
+        'compass'
+        'sass'
+        'css'
+      ]
+  'linter-csslint': {}
