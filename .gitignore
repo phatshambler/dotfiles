@@ -6,3 +6,9 @@ atom.symlink/storage
 atom.symlink/themes
 
 git/gitconfig.symlink
+
+bin/font-compression-reference/brotli/dec
+bin/font-compression-reference/brotli/enc
+bin/font-compression-reference/woff2/*.o
+bin/font-compression-reference/woff2/woff2_compress
+bin/font-compression-reference/woff2/woff2_decompress
