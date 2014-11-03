@@ -11,4 +11,6 @@ then
   sudo gem install compass
 fi
 
+sudo gem install scss-lint
+
 exit 0
