@@ -23,6 +23,11 @@
       'open-on-github'
       'Zen'
       'atom-jshint'
+      'linter-scss-lint'
+      'linter-htmlhint'
+      'language-ruby-on-rails'
+      'language-objective-c'
+      'language-less'
     ]
     'themes': [
       'atom-dark-ui'
@@ -100,4 +105,30 @@
         'sass'
         'css'
       ]
-  'linter-csslint': {}
+  'tabs': {}
+'.js.rails.source source.jquery.js':
+  'editor': {}
+'.rails.rjs.ruby.source':
+  'editor': {}
+'.text.xml.xsl':
+  'editor': {}
+'.ruby.source.sql':
+  'editor': {}
+'.rails.ruby.source':
+  'editor': {}
+'.html.ruby.text':
+  'editor': {}
+'.css.less.source':
+  'editor': {}
+'.objc.source ++ *':
+  'editor': {}
+'.source.yaml':
+  'editor': {}
+'.text.xml':
+  'editor': {}
+'.source.strings':
+  'editor': {}
+'.objc.source':
+  'editor': {}
+'.perl.source':
+  'editor': {}
