@@ -34,6 +34,7 @@
       "language-ruby-on-rails"
       "language-objective-c"
       "language-less"
+      "docblockr"
     ]
     themes: [
       "atom-dark-ui"
@@ -78,6 +79,7 @@
         "backbone"
         "jquery"
         "javascript"
+        "css"
       ]
       ActionScript: [
         "actionscript"
@@ -105,3 +107,5 @@
         "sass"
         "css"
       ]
+  docblockr: {}
+  "autocomplete-plus": {}
