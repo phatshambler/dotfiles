@@ -59,6 +59,12 @@
     lintOnChange: false
     showGutters: false
     statusBar: "Show error if the cursor is in range"
+    subtleLinterErrors: [
+      "jshint"
+      "php"
+      "phpcs"
+      "phpmd"
+    ]
   "tree-view":
     hideIgnoredNames: true
   dash:
@@ -108,4 +114,15 @@
         "css"
       ]
   docblockr: {}
-  "autocomplete-plus": {}
+  "autocomplete-plus":
+    confirmCompletion: "tab"
+  "linter-jshint": {}
+  "linter-php": {}
+  "linter-phpcs": {}
+  react: {}
+".coffee.jsx.source":
+  editor:
+    nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
+".js.jsx.source":
+  editor:
+    nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"

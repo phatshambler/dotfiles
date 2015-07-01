@@ -8,7 +8,7 @@
 if test ! $(which compass)
 then
   echo "  Installing Compass for you."
-  sudo gem install compass
+  sudo gem install compass sass
 fi
 
 sudo gem install scss-lint
