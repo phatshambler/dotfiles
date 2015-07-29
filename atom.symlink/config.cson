@@ -5,7 +5,7 @@
     autoIndentOnPaste: false
     nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
     tabLength: 4
-    softWrap: true
+    softWrap: false
     invisibles: {}
   core:
     ignoredNames: [
@@ -15,32 +15,22 @@
       "composer.lock"
     ]
     disabledPackages: [
+      "language-clojure"
+      "language-go"
       "language-java"
-      "language-toml"
-      "background-tips"
-      "bookmarks"
-      "markdown-preview"
-      "spell-check"
-      "archive-view"
-      "autoflow"
-      "autosave"
-      "bezier-curve-editor"
-      "go-to-line"
-      "open-on-github"
-      "Zen"
-      "atom-jshint"
-      "linter-scss-lint"
-      "linter-htmlhint"
+      "language-mustache"
+      "language-perl"
+      "language-ruby"
       "language-ruby-on-rails"
-      "language-objective-c"
-      "language-less"
-      "docblockr"
+      "language-toml"
+      "linter-jsxhint"
     ]
     themes: [
       "atom-dark-ui"
       "base16-tomorrow-dark-theme"
     ]
     projectHome: "/Users/dmongeau/Dropbox/Sites"
+    excludeVcsIgnoredPaths: false
   "exception-reporting":
     userId: "bf3ab42e-1c26-e9b9-141a-bbcd1e367d22"
   "release-notes":
@@ -65,6 +55,7 @@
       "phpcs"
       "phpmd"
     ]
+    showErrorPanel: false
   "tree-view":
     hideIgnoredNames: true
   dash:
@@ -120,9 +111,15 @@
   "linter-php": {}
   "linter-phpcs": {}
   react: {}
+".js.regexp.source":
+  editor:
+    nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
 ".coffee.jsx.source":
   editor:
     nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
 ".js.jsx.source":
+  editor:
+    nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
+".js.source":
   editor:
     nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"

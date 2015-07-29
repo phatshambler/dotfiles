@@ -7,27 +7,3 @@
  * If you are unfamiliar with LESS, you can read more about it here:
  * http://www.lesscss.org
  */
-
-.tree-view .entry.directory.status-modified > .header,
-.tree-view .entry.file.status-modified {
-  font-weight: bold;
-}
-
-
-@error-color: #b22222;
-@warning-color: #DAA520;
-
-.highlight {
-  &.linter-warning .region {
-    background: transparent;
-    border-left: none;
-    border-right: none;
-    border-bottom: 2px dotted @warning-color;
-  }
-  &.linter-error .region {
-    background: transparent;
-    border-left: none;
-    border-right: none;
-    border-bottom: 2px dotted @error-color;
-  }
-}
