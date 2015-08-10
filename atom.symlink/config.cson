@@ -24,6 +24,8 @@
       "language-ruby-on-rails"
       "language-toml"
       "linter-jsxhint"
+      "linter-scss-lint"
+      "linter-phpcs"
     ]
     themes: [
       "atom-dark-ui"
