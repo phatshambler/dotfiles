@@ -1,3 +1,6 @@
+execute pathogen#infect()
 syntax enable  
 set number
 set history=100
+colorscheme molokai
+let g:rehash256 = 1

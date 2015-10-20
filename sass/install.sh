@@ -13,4 +13,6 @@ fi
 
 sudo gem install scss-lint
 
+rbenv rehash
+
 exit 0

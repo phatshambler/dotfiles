@@ -23,9 +23,6 @@
       "language-ruby"
       "language-ruby-on-rails"
       "language-toml"
-      "linter-jsxhint"
-      "linter-scss-lint"
-      "linter-phpcs"
     ]
     themes: [
       "atom-dark-ui"
@@ -113,13 +110,13 @@
   "linter-php": {}
   "linter-phpcs": {}
   react: {}
-".js.regexp.source":
+".js.jsx.source":
   editor:
     nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
 ".coffee.jsx.source":
   editor:
     nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
-".js.jsx.source":
+".js.regexp.source":
   editor:
     nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
 ".js.source":

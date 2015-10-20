@@ -1,1 +1,3 @@
-sudo npm install -g grunt-cli grunt-contrib-imagemin grunt-contrib-requirejs
+sudo npm install -g grunt-cli
+
+exit 0

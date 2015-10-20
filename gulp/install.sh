@@ -1,1 +1,3 @@
-npm install -g gulp gulp-webpack
+npm install -g gulp
+
+exit 0

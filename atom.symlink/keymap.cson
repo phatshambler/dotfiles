@@ -1,2 +1,4 @@
 '.editor':
   'alt-shift-cmd-G': 'gist-it:gist-open-buffers'
+  'alt-shift-up': 'editor:add-selection-above'
+  'alt-shift-down': 'editor:add-selection-below'

@@ -4,8 +4,8 @@
 [hub]
         protocol = https
 [user]
-        name = AUTHORNAME
-        email = AUTHOREMAIL
+        name = "David Mongeau-Petitpas"
+        email = "dmp@atelierfolklore.ca"
 [credential]
         helper = GIT_CREDENTIAL_HELPER
 [alias]
