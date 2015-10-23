@@ -28,7 +28,7 @@
       "atom-dark-ui"
       "base16-tomorrow-dark-theme"
     ]
-    projectHome: "/Users/dmongeau/Dropbox/Sites"
+    projectHome: "/Users/dmp/Code"
     excludeVcsIgnoredPaths: false
   "exception-reporting":
     userId: "bf3ab42e-1c26-e9b9-141a-bbcd1e367d22"
@@ -111,13 +111,13 @@
   "linter-phpcs": {}
   react: {}
   "gist-it": {}
-".js.regexp.source":
+".js.jsx.source":
   editor:
     nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
 ".coffee.jsx.source":
   editor:
     nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
-".js.jsx.source":
+".js.regexp.source":
   editor:
     nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
 ".js.source":
