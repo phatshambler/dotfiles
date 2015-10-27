@@ -110,13 +110,13 @@
   "linter-php": {}
   "linter-phpcs": {}
   react: {}
-".js.jsx.source":
+".js.regexp.source":
   editor:
     nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
 ".coffee.jsx.source":
   editor:
     nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
-".js.regexp.source":
+".js.jsx.source":
   editor:
     nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
 ".js.source":
