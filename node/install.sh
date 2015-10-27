@@ -8,17 +8,18 @@ fi
 source $(brew --prefix nvm)/nvm.sh
 
 nvm install v0.12.7
-nmv install v4.1.1
+nvm install v4.1.1
 
 nvm use v0.12.7
 npm update -g npm
-npm install -g bower yo
+npm install -g bower yo gulp grunt-cli
 
 nvm use v4.1.1
 npm update -g npm
-npm install -g bower yo
+npm install -g bower yo gulp grunt-cli
 
 nvm use v0.12.7
 nvm alias default v0.12.7
+
 
 exit 0
