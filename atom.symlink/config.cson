@@ -1,19 +1,9 @@
 "*":
-  editor:
-    fontSize: 12
-    showIndentGuide: true
-    autoIndentOnPaste: false
-    nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
-    tabLength: 4
-    softWrap: false
-    invisibles: {}
+  "atom-jshint":
+    hintOnModify: false
+  "autocomplete-plus":
+    confirmCompletion: "tab"
   core:
-    ignoredNames: [
-      ".git"
-      ".sass-cache"
-      ".DS_Store"
-      "composer.lock"
-    ]
     disabledPackages: [
       "language-clojure"
       "language-go"
@@ -23,42 +13,37 @@
       "language-ruby"
       "language-ruby-on-rails"
       "language-toml"
+      "linter-php"
     ]
+    excludeVcsIgnoredPaths: false
+    ignoredNames: [
+      ".git"
+      ".sass-cache"
+      ".DS_Store"
+      "composer.lock"
+    ]
+    projectHome: "~/Code"
     themes: [
       "atom-dark-ui"
       "base16-tomorrow-dark-theme"
     ]
-    projectHome: "~/Code"
-    excludeVcsIgnoredPaths: false
-  "exception-reporting":
-    userId: "bf3ab42e-1c26-e9b9-141a-bbcd1e367d22"
-  "release-notes":
-    viewedVersion: "0.92.0"
-  welcome:
-    showOnStartup: false
-  metrics:
-    userId: "d4f04106661c7c892c48e7ea675a18896355e99a"
-  "atom-jshint":
-    hintOnModify: false
-  "git-diff":
-    showIconsInEditorGutter: true
-  whitespace:
-    removeTrailingWhitespace: false
-  linter:
-    lintOnChange: false
-    showGutters: false
-    statusBar: "Show error if the cursor is in range"
-    subtleLinterErrors: [
-      "jshint"
-      "php"
-      "phpcs"
-      "phpmd"
-    ]
-    showErrorPanel: false
-  "tree-view":
-    hideIgnoredNames: true
   dash:
     grammars:
+      ActionScript: [
+        "actionscript"
+      ]
+      CSS: [
+        "css"
+        "bootstrap"
+      ]
+      HTML: [
+        "html"
+        "underscore"
+        "backbone"
+        "jquery"
+        "javascript"
+        "css"
+      ]
       JavaScript: [
         "nodejs"
         "underscore"
@@ -69,24 +54,9 @@
         "jquery"
         "javascript"
       ]
-      HTML: [
-        "html"
-        "underscore"
-        "backbone"
-        "jquery"
-        "javascript"
-        "css"
-      ]
-      ActionScript: [
-        "actionscript"
-      ]
-      CSS: [
-        "css"
-        "bootstrap"
-      ]
-      "Shell Scripts": [
-        "bash"
-        "manpages"
+      PHP: [
+        "php"
+        "laravel"
       ]
       SQL: [
         "mysql"
@@ -94,32 +64,59 @@
       SVG: [
         "svg"
       ]
-      PHP: [
-        "php"
-        "laravel"
-      ]
       Sass: [
         "compass"
         "sass"
         "css"
       ]
+      "Shell Scripts": [
+        "bash"
+        "manpages"
+      ]
   docblockr: {}
-  "autocomplete-plus":
-    confirmCompletion: "tab"
+  editor:
+    autoIndentOnPaste: false
+    fontSize: 12
+    invisibles: {}
+    nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
+    showIndentGuide: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "bf3ab42e-1c26-e9b9-141a-bbcd1e367d22"
+  "gist-it": {}
+  "git-diff":
+    showIconsInEditorGutter: true
+  linter:
+    lintOnChange: false
+    showErrorPanel: false
+    showGutters: false
+    statusBar: "Show error if the cursor is in range"
+    subtleLinterErrors: [
+      "jshint"
+      "php"
+      "phpcs"
+      "phpmd"
+    ]
   "linter-jshint": {}
   "linter-php": {}
   "linter-phpcs": {}
+  metrics:
+    userId: "d4f04106661c7c892c48e7ea675a18896355e99a"
   react: {}
-  "gist-it": {}
-".js.jsx.source":
-  editor:
-    nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
+  "release-notes":
+    viewedVersion: "0.92.0"
+  "tree-view":
+    hideIgnoredNames: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    removeTrailingWhitespace: false
 ".coffee.jsx.source":
   editor:
-    nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
+    nonWordCharacters: "./\\\\()\\\"':,.;<>~!@#$%^&*|+=[]{}`~?"
 ".js.jsx.source":
   editor:
-    nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
+    nonWordCharacters: "./\\\\()\\\"':,.;<>~!@#$%^&*|+=[]{}`~?"
 ".js.source":
   editor:
-    nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
+    nonWordCharacters: "./\\\\()\\\"':,.;<>~!@#$%^&*|+=[]{}`~?"
