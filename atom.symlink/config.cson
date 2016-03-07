@@ -13,7 +13,7 @@
       "language-ruby"
       "language-ruby-on-rails"
       "language-toml"
-      "linter-php"
+      "linter-phpcs"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -111,6 +111,9 @@
     showOnStartup: false
   whitespace:
     removeTrailingWhitespace: false
+".arduino.source":
+  editor:
+    nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
 ".coffee.jsx.source":
   editor:
     nonWordCharacters: "./\\\\()\\\"':,.;<>~!@#$%^&*|+=[]{}`~?"
