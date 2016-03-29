@@ -86,6 +86,8 @@
   "gist-it": {}
   "git-diff":
     showIconsInEditorGutter: true
+  jshint:
+    supportLintingJsx: true
   linter:
     lintOnChange: false
     showErrorPanel: false
@@ -114,6 +116,10 @@
 ".arduino.source":
   editor:
     nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
+".blade.html.php.text":
+  editor:
+    commentEnd: " --}}"
+    commentStart: "{{-- "
 ".coffee.jsx.source":
   editor:
     nonWordCharacters: "./\\\\()\\\"':,.;<>~!@#$%^&*|+=[]{}`~?"
