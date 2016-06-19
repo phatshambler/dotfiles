@@ -10,10 +10,9 @@
       "language-java"
       "language-mustache"
       "language-perl"
-      "language-ruby"
-      "language-ruby-on-rails"
       "language-toml"
       "linter-phpcs"
+      "linter-eslint"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -86,8 +85,7 @@
   "gist-it": {}
   "git-diff":
     showIconsInEditorGutter: true
-  jshint:
-    supportLintingJsx: true
+  jshint: {}
   linter:
     lintOnChange: false
     showErrorPanel: false
