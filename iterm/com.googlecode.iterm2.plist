@@ -609,8 +609,34 @@
 	<string></string>
 	<key>NSScrollAnimationEnabled</key>
 	<false/>
+	<key>NSScrollViewShouldScrollUnderTitlebar</key>
+	<false/>
+	<key>NSTableView Columns KeyBingingTable</key>
+	<array>
+		<data>
+		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
+		hAErATCG
+		</data>
+		<string>198</string>
+		<data>
+		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
+		hAErATGG
+		</data>
+		<string>307</string>
+	</array>
+	<key>NSTableView Hidden Columns KeyBingingTable</key>
+	<array/>
+	<key>NSTableView Sort Ordering KeyBingingTable</key>
+	<array/>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
 	<key>NSWindow Frame Preferences</key>
-	<string>269 110 924 485 0 0 1440 900 </string>
+	<string>301 1877 606 456 -552 900 2560 1440 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>410 382 620 392 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 1440 900 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -1341,10 +1367,37 @@
 			<string>/Users/dmp</string>
 		</dict>
 	</array>
+	<key>NoSyncConfirmBeta</key>
+	<true/>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
+	<true/>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
+	<integer>0</integer>
+	<key>NoSyncInstallationId</key>
+	<string>D171318D-6780-47D8-89ED-A2044FC7FB4B</string>
+	<key>NoSyncLastTipTime</key>
+	<real>488561474.89963001</real>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
+	<true/>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
+	<integer>0</integer>
+	<key>NoSyncPermissionToShowTip</key>
+	<true/>
+	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
+	<real>487970965.21822703</real>
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>478998946.27072603</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>487713430.48415798</real>
+	<real>487804184.32146502</real>
+	<key>NoSyncTipsDisabled</key>
+	<true/>
+	<key>NoSyncTipsToNotShow</key>
+	<array>
+		<string>000</string>
+		<string>0000</string>
+		<string>0001</string>
+		<string>0002</string>
+	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
 	<key>OpenArrangementAtStartup</key>
@@ -1357,6 +1410,8 @@
 	<false/>
 	<key>PasteFromClipboard</key>
 	<false/>
+	<key>PasteTabToStringTabStopSize</key>
+	<integer>4</integer>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -1401,15 +1456,17 @@
 	<key>RightOption</key>
 	<integer>3</integer>
 	<key>SUAutomaticallyUpdate</key>
-	<false/>
+	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
+	<key>SUFeedAlternateAppNameKey</key>
+	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing.xml</string>
+	<string>https://iterm2.com/appcasts/testing.xml?shard=57</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-06-15T19:37:04Z</date>
+	<date>2016-09-05T19:39:14Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1453,9 +1510,15 @@
 				<integer>80</integer>
 				<key>Desired Rows</key>
 				<integer>25</integer>
+				<key>Has Toolbelt</key>
+				<false/>
 				<key>Height</key>
 				<real>900</real>
 				<key>Hide After Opening</key>
+				<false/>
+				<key>Hiding Toolbelt Should Resize Window</key>
+				<false/>
+				<key>Is Hotkey Window</key>
 				<false/>
 				<key>Old Height</key>
 				<real>1403</real>
@@ -1465,6 +1528,8 @@
 				<real>1</real>
 				<key>Old Y Origin</key>
 				<real>14</real>
+				<key>Saved Window Type</key>
+				<integer>0</integer>
 				<key>Screen</key>
 				<integer>0</integer>
 				<key>Selected Tab Index</key>
@@ -1481,7 +1546,7 @@
 									<array>
 										<dict>
 											<key>Is Active</key>
-											<false/>
+											<integer>0</integer>
 											<key>Session</key>
 											<dict>
 												<key>Bookmark</key>
@@ -2210,12 +2275,56 @@
 													<key>Working Directory</key>
 													<string>/Users/dmp</string>
 												</dict>
+												<key>Bookmark Name</key>
+												<string>Default</string>
 												<key>Columns</key>
 												<integer>101</integer>
+												<key>Commands</key>
+												<array/>
+												<key>Directories</key>
+												<array>
+													<string>/Users/dmp</string>
+													<string>/Users/dmp</string>
+													<string>/Users/dmp/Code/archives.nte.qc.ca</string>
+													<string>/Users/dmp/Code/archives.nte.qc.ca</string>
+													<string>/Users/dmp/Code</string>
+													<string>/Users/dmp/Code</string>
+													<string>/Users/dmp</string>
+												</array>
+												<key>Environment</key>
+												<dict>
+													<key>PWD</key>
+													<string>/Users/dmp/Code/archives.nte.qc.ca</string>
+												</dict>
+												<key>Hosts</key>
+												<array/>
+												<key>Is UTF-8</key>
+												<true/>
+												<key>Program</key>
+												<dict>
+													<key>Type</key>
+													<string>Shell Launcher</string>
+												</dict>
 												<key>Rows</key>
 												<integer>25</integer>
+												<key>Server PID</key>
+												<integer>395</integer>
+												<key>Session Default Name</key>
+												<string>Default</string>
+												<key>Session GUID</key>
+												<string>7804252B-35A2-4A41-904B-54078C4163DC</string>
+												<key>Session Name</key>
+												<string>Default</string>
+												<key>Session Window Title</key>
+												<string>MacBook-Pro-de-David</string>
+												<key>Shell Integration Ever Used</key>
+												<false/>
+												<key>Substitutions</key>
+												<dict/>
+												<key>TTY</key>
+												<string>/dev/ttys000</string>
 												<key>Working Directory</key>
-												<string>/Users/dmp/Code/manivelle/interface</string>
+												<string>/Users/dmp</string>
 											</dict>
 											<key>View Type</key>
 											<string>SessionView</string>
@@ -2233,7 +2342,7 @@
 										</dict>
 										<dict>
 											<key>Is Active</key>
-											<false/>
+											<integer>0</integer>
 											<key>Session</key>
 											<dict>
 												<key>Bookmark</key>
@@ -2962,12 +3071,51 @@
 													<key>Working Directory</key>
 													<string>/Users/dmp</string>
 												</dict>
+												<key>Bookmark Name</key>
+												<string>Default</string>
 												<key>Columns</key>
 												<integer>101</integer>
+												<key>Commands</key>
+												<array/>
+												<key>Directories</key>
+												<array>
+													<string>/Users/dmp</string>
+													<string>/Users/dmp</string>
+												</array>
+												<key>Environment</key>
+												<dict>
+													<key>PWD</key>
+													<string>/Users/dmp</string>
+												</dict>
+												<key>Hosts</key>
+												<array/>
+												<key>Is UTF-8</key>
+												<true/>
+												<key>Program</key>
+												<dict>
+													<key>Type</key>
+													<string>Shell Launcher</string>
+												</dict>
 												<key>Rows</key>
 												<integer>26</integer>
+												<key>Server PID</key>
+												<integer>397</integer>
+												<key>Session Default Name</key>
+												<string>Default</string>
+												<key>Session GUID</key>
+												<string>EB32E489-7BD4-4256-9AD6-1F7044FC6063</string>
+												<key>Session Name</key>
+												<string>Default</string>
+												<key>Session Window Title</key>
+												<string>MacBook-Pro-de-David</string>
+												<key>Shell Integration Ever Used</key>
+												<false/>
+												<key>Substitutions</key>
+												<dict/>
+												<key>TTY</key>
+												<string>/dev/ttys001</string>
 												<key>Working Directory</key>
-												<string>/Users/dmp/Code/manivelle/backend</string>
+												<string>/Users/dmp</string>
 											</dict>
 											<key>View Type</key>
 											<string>SessionView</string>
@@ -3005,7 +3153,7 @@
 									<array>
 										<dict>
 											<key>Is Active</key>
-											<false/>
+											<integer>1</integer>
 											<key>Session</key>
 											<dict>
 												<key>Bookmark</key>
@@ -3734,19 +3882,63 @@
 													<key>Working Directory</key>
 													<string>/Users/dmp</string>
 												</dict>
+												<key>Bookmark Name</key>
+												<string>Default</string>
 												<key>Columns</key>
 												<integer>101</integer>
+												<key>Commands</key>
+												<array/>
+												<key>Directories</key>
+												<array>
+													<string>/Users/dmp</string>
+													<string>/Users/dmp/Code/lachapelle.org</string>
+													<string>/Users/dmp/Code/lachapelle.org</string>
+													<string>/Users/dmp/Code/lachapelle.org</string>
+													<string>/Users/dmp/Code/lachapelle.org</string>
+													<string>/Users/dmp/Code</string>
+													<string>/Users/dmp</string>
+												</array>
+												<key>Environment</key>
+												<dict>
+													<key>PWD</key>
+													<string>/Users/dmp/Code/lachapelle.org</string>
+												</dict>
+												<key>Hosts</key>
+												<array/>
+												<key>Is UTF-8</key>
+												<true/>
+												<key>Program</key>
+												<dict>
+													<key>Type</key>
+													<string>Shell Launcher</string>
+												</dict>
 												<key>Rows</key>
-												<integer>39</integer>
+												<integer>35</integer>
+												<key>Server PID</key>
+												<integer>399</integer>
+												<key>Session Default Name</key>
+												<string>Default</string>
+												<key>Session GUID</key>
+												<string>D8190E33-143F-4F85-92CB-5F27835405C4</string>
+												<key>Session Name</key>
+												<string>Default</string>
+												<key>Session Window Title</key>
+												<string>MacBook-Pro-de-David</string>
+												<key>Shell Integration Ever Used</key>
+												<false/>
+												<key>Substitutions</key>
+												<dict/>
+												<key>TTY</key>
+												<string>/dev/ttys002</string>
 												<key>Working Directory</key>
-												<string>/Users/dmp/Code/manivelle/ecran</string>
+												<string>/Users/dmp</string>
 											</dict>
 											<key>View Type</key>
 											<string>SessionView</string>
 											<key>frame</key>
 											<dict>
 												<key>height</key>
-												<real>670.5</real>
+												<real>602</real>
 												<key>width</key>
 												<real>720</real>
 												<key>x</key>
@@ -3757,7 +3949,7 @@
 										</dict>
 										<dict>
 											<key>Is Active</key>
-											<true/>
+											<integer>0</integer>
 											<key>Session</key>
 											<dict>
 												<key>Bookmark</key>
@@ -4486,10 +4678,49 @@
 													<key>Working Directory</key>
 													<string>/Users/dmp</string>
 												</dict>
+												<key>Bookmark Name</key>
+												<string>Default</string>
 												<key>Columns</key>
 												<integer>101</integer>
+												<key>Commands</key>
+												<array/>
+												<key>Directories</key>
+												<array>
+													<string>/Users/dmp</string>
+													<string>/Users/dmp</string>
+												</array>
+												<key>Environment</key>
+												<dict>
+													<key>PWD</key>
+													<string>/Users/dmp</string>
+												</dict>
+												<key>Hosts</key>
+												<array/>
+												<key>Is UTF-8</key>
+												<true/>
+												<key>Program</key>
+												<dict>
+													<key>Type</key>
+													<string>Shell Launcher</string>
+												</dict>
 												<key>Rows</key>
-												<integer>13</integer>
+												<integer>17</integer>
+												<key>Server PID</key>
+												<integer>403</integer>
+												<key>Session Default Name</key>
+												<string>Default</string>
+												<key>Session GUID</key>
+												<string>793AE800-C0A6-4154-AE00-16EC489CA895</string>
+												<key>Session Name</key>
+												<string>Default</string>
+												<key>Session Window Title</key>
+												<string>MacBook-Pro-de-David</string>
+												<key>Shell Integration Ever Used</key>
+												<false/>
+												<key>Substitutions</key>
+												<dict/>
+												<key>TTY</key>
+												<string>/dev/ttys003</string>
 												<key>Working Directory</key>
 												<string>/Users/dmp</string>
 											</dict>
@@ -4498,13 +4729,13 @@
 											<key>frame</key>
 											<dict>
 												<key>height</key>
-												<real>228.5</real>
+												<real>297</real>
 												<key>width</key>
 												<real>720</real>
 												<key>x</key>
 												<real>0.0</real>
 												<key>y</key>
-												<real>671.5</real>
+												<real>603</real>
 											</dict>
 										</dict>
 									</array>
@@ -4567,6 +4798,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.1.4</string>
+	<string>3.0.8</string>
 </dict>
 </plist>

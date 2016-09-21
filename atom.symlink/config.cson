@@ -121,6 +121,10 @@
 ".coffee.jsx.source":
   editor:
     nonWordCharacters: "./\\\\()\\\"':,.;<>~!@#$%^&*|+=[]{}`~?"
+".html.js.text":
+  editor:
+    nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
+    tabLength: 4
 ".js.jsx.source":
   editor:
     nonWordCharacters: "./\\\\()\\\"':,.;<>~!@#$%^&*|+=[]{}`~?"
