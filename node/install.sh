@@ -7,24 +7,24 @@ fi
 
 source $(brew --prefix nvm)/nvm.sh
 
-nvm install v0.12
-nvm install v4
-nvm install v5
+nvm install 0.12
+nvm install 4
+nvm install latest
 
-nvm use v0.12
+nvm use 0.12
 npm update -g npm
 npm install -g bower yo gulp grunt-cli
 
-nvm use v4
+nvm use 4
 npm update -g npm
 npm install -g bower yo gulp grunt-cli
 
-nvm use v5
+nvm use latest
 npm update -g npm
-npm install -g bower yo gulp grunt-cli
+npm install -g bower yo gulp grunt-cli react-native
 
-nvm use v4
-nvm alias default v4
+nvm use latest
+nvm alias default latest
 
 
 exit 0
