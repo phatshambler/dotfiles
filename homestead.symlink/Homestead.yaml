@@ -12,10 +12,35 @@ keys:
 folders:
     - map: ~/Code
       to: /home/vagrant/Code
+      type: nfs
+
+map_suffix: .homestead.flklr.ca .local.flklr.ca
 
 sites:
-    - map: easternbloc.ca.homestead.flklr.ca
+    - map: easternbloc.ca
       to: /home/vagrant/Code/easternbloc.ca/public
+    - map: ffframe.com
+      to: /home/vagrant/Code/ffframe.com/public
+      alias: www.ffframe.com shootstudio.ffframe.com
+    - map: manivelle.io
+      to: /home/vagrant/Code/manivelle/backend/public
+      alias: "*.manivelle.io *.ecrans.manivelle.io"
+    - map: telecommande
+      to: /home/vagrant/Code/telecommande/public
+      alias: "*.telecommande"
+    - map: hackathon
+      to: /home/vagrant/Code/hackathon-culture/web/public
+      alias: "*.hackathon"
+    - map: archives.nte.qc.ca
+      to: /home/vagrant/Code/archives.nte.qc.ca/public
+      alias: "*.archives.nte.qc.ca"
+      
+databases:
+    - ffframe
+    - manivelle
+    - hackathon
+    - telecommande
+    - nte_archives
 
 # blackfire:
 #     - id: foo
