@@ -1,2 +1,3 @@
 export COMPOSER_BIN_PATH="/Users/dmp/.composer/vendor/bin"
-export PATH="$COMPOSER_BIN_PATH:$PATH"
+export PHP_PATH="$(brew --prefix homebrew/php/php70)/bin"
+export PATH="$COMPOSER_BIN_PATH:$PHP_PATH:$PATH"

@@ -4,6 +4,8 @@
 # add any commands you wish to this file and they will
 # be run after the Homestead machine is provisioned.
 
+sudo apt-get -y install chromium-browser xvfb pulseaudio ffmpeg libfdk-aac-dev
+
 php /home/vagrant/Code/ffframe.com/artisan migrate
 
 php /home/vagrant/Code/manivelle/backend/artisan migrate

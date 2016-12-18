@@ -21,7 +21,7 @@ sites:
       to: /home/vagrant/Code/easternbloc.ca/public
     - map: ffframe.com
       to: /home/vagrant/Code/ffframe.com/public
-      alias: www.ffframe.com shootstudio.ffframe.com
+      alias: "www.ffframe.com *.ffframe.com richardmartineau.ca *.richardmartineau.ca"
     - map: manivelle.io
       to: /home/vagrant/Code/manivelle/backend/public
       alias: "*.manivelle.io *.ecrans.manivelle.io"
@@ -34,6 +34,10 @@ sites:
     - map: archives.nte.qc.ca
       to: /home/vagrant/Code/archives.nte.qc.ca/public
       alias: "*.archives.nte.qc.ca"
+    - map: laravel-workbench
+      to: /home/vagrant/Code/laravel-workbench/public
+    - map: lumen-workbench
+      to: /home/vagrant/Code/lumen-workbench/public
       
 databases:
     - ffframe

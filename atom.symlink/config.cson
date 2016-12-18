@@ -79,6 +79,7 @@
     invisibles: {}
     nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
     showIndentGuide: true
+    softWrap: true
     tabLength: 4
     tabType: "soft"
   "exception-reporting":
