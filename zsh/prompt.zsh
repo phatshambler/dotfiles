@@ -59,6 +59,7 @@ current_date () {
 }
 
 export PROMPT=$'\nin $(directory_name) $(git_dirty)$(need_push)\n› '
+
 set_prompt () {
   export RPROMPT="$(current_date)"
 }

@@ -1,9 +1,12 @@
+atom.symlink/.apm
 atom.symlink/.node-gyp
 atom.symlink/.storage
+atom.symlink/blob-store
 atom.symlink/compile-cache/
 atom.symlink/packages
 atom.symlink/storage
 atom.symlink/themes
+<<<<<<< HEAD
 atom.symlink/.apm
 
 git/gitconfig.symlink
@@ -15,3 +18,9 @@ bin/font-compression-reference/woff2/woff2_compress
 bin/font-compression-reference/woff2/woff2_decompress
 
 npm_debug.log
+=======
+atom.symlink/blob-store
+atom.symlink/recovery
+
+git/gitconfig.local.symlink
+>>>>>>> holman/master

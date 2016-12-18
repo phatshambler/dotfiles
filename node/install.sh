@@ -1,7 +1,5 @@
 npm_global="bower yo gulp grunt-cli react-native"
 
-brew install nvm
-
 export NVM_DIR=~/.nvm
 if [ ! -d "$NVM_DIR" ]; then
     mkdir $NVM_DIR

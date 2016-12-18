@@ -1,1 +1,1 @@
-#eval "$(gulp --completion=zsh)"
+eval "$(gulp --completion=zsh)"

@@ -1,1 +1,1 @@
-#eval "$(grunt --completion=zsh)"
+eval "$(grunt --completion=zsh)"
