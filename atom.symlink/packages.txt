@@ -1,0 +1,8 @@
+file-icons@1.7.25
+linter@1.11.18
+linter-jshint@3.0.2
+linter-phpcs@1.5.4
+linter-sass-lint@1.7.4
+react@0.16.1
+
+

@@ -83,11 +83,11 @@ defaults -currentHost write NSGlobalDomain com.apple.AppleMultitouchTrackpad.tra
 defaults write com.apple.AppleMultitouchTrackpad TrackpadCornerSecondaryClick -int 2
 defaults write com.apple.AppleMultitouchTrackpad TrackpadRightClick -bool false
 
-# Disable press-and-hold for keys in favor of key repeat.
-defaults write -g ApplePressAndHoldEnabled -bool false
+# Set a really fast keyboard repeat rate.
+defaults write NSGlobalDomain KeyRepeat -float 0.000000000001
 
-# Set a really fast key repeat.
-defaults write NSGlobalDomain KeyRepeat -int 0
+# Disable press-and-hold for keys in favor of key repeat.
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
