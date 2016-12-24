@@ -1,6 +1,4 @@
-brew install homebrew/php/php70
-
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-#pecl config-set php_ini "$PHP_PATH/conf/php.ini"
-#pear config-set php_ini "$PHP_PATH/conf/php.ini"
+/usr/local/bin/composer global require "squizlabs/php_codesniffer=*"
+/usr/local/bin/composer global require "phpunit/phpunit=5.5.*"
