@@ -38,12 +38,15 @@ sites:
       to: /home/vagrant/Code/laravel-workbench/public
     - map: lumen-workbench
       to: /home/vagrant/Code/lumen-workbench/public
+    - map: lachapelle.org
+      to: /home/vagrant/Code/lachapelle.org/public
       
 databases:
     - ffframe
     - manivelle
     - hackathon
     - telecommande
+    - lachapelle
     - nte_archives
 
 # blackfire:
