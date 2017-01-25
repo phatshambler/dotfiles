@@ -40,7 +40,9 @@ sites:
       to: /home/vagrant/Code/lumen-workbench/public
     - map: lachapelle.org
       to: /home/vagrant/Code/lachapelle.org/public
-      
+    - map: theinvisiblewall.com
+      to: /home/vagrant/Code/theinvisiblewall.com/public
+
 databases:
     - ffframe
     - manivelle
