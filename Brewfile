@@ -22,6 +22,8 @@ brew 'jq'
 brew 'homebrew/php/php70'
 brew 'homebrew/php/php70-xdebug'
 brew 'homebrew/php/php70-mcrypt'
+brew 'homebrew/php/php70-imagick'
+brew 'homebrew/php/php70-gmagick'
 brew 'lame'
 brew 'libcaca', args: ['with-imlib2']
 brew 'libgit2'

@@ -42,6 +42,10 @@ sites:
       to: /home/vagrant/Code/lachapelle.org/public
     - map: theinvisiblewall.com
       to: /home/vagrant/Code/theinvisiblewall.com/public
+    - map: popperscoolers.com
+      to: /home/vagrant/Code/popperscoolers.com/public
+    - map: folklore.quebec
+      to: /home/vagrant/Code/folklore.quebec/public
 
 databases:
     - ffframe
