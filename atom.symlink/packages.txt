@@ -1,10 +1,10 @@
 docblockr@0.9.1
-file-icons@2.0.8
-language-blade@0.26.2
+file-icons@2.0.14
+language-blade@0.27.1
 linter@1.11.21
-linter-eslint@8.0.0
+linter-eslint@8.1.0
 linter-jshint@3.0.2
-linter-phpcs@1.5.6
+linter-phpcs@1.5.8
 linter-sass-lint@1.7.4
 react@0.16.2
 
