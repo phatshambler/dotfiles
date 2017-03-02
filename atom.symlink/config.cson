@@ -9,15 +9,12 @@
       "language-go"
       "language-java"
       "language-mustache"
-      "language-perl"
       "language-toml"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
       ".git"
-      ".sass-cache"
       ".DS_Store"
-      "composer.lock"
     ]
     projectHome: "~/Code"
     telemetryConsent: "limited"
