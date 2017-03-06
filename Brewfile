@@ -24,6 +24,7 @@ brew 'homebrew/php/php70-xdebug'
 brew 'homebrew/php/php70-mcrypt'
 brew 'homebrew/php/php70-imagick'
 brew 'homebrew/php/php70-gmagick'
+brew 'kops'
 brew 'kubectl'
 brew 'lame'
 brew 'libcaca', args: ['with-imlib2']
