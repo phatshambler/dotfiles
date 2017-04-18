@@ -48,6 +48,7 @@ brew 'yarn'
 brew 'youtube-dl'
 brew 'zsh'
 brew 'wakeonlan'
+brew 'wine'
 
 cask 'airfoil'
 cask 'arduino'

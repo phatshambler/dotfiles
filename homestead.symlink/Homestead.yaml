@@ -44,10 +44,17 @@ sites:
       to: /home/vagrant/Code/theinvisiblewall.com/public
     - map: popperscoolers.com
       to: /home/vagrant/Code/popperscoolers.com/public
+    - map: landandlegends.com
+      to: /home/vagrant/Code/landandlegends.com/public
+      alias: "*.atimetoswim.com atimetoswim.com"
     - map: folklore.quebec
       to: /home/vagrant/Code/folklore.quebec/public
     - map: manivelle-interface
       to: /home/vagrant/Code/manivelle/interface/dist
+    - map: microdoc
+      to: /home/vagrant/Code/urbania/microdoc/public
+    - map: urbania
+      to: /home/vagrant/Code/urbania/urbania.artv.ca/public
 
 databases:
     - ffframe
@@ -57,6 +64,9 @@ databases:
     - lachapelle
     - nte_archives
     - popperscoolers
+    - atimetoswim
+    - microdoc
+    - urbania
 
 # blackfire:
 #     - id: foo
