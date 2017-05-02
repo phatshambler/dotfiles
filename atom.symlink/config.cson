@@ -98,8 +98,7 @@
   "linter-php": {}
   "linter-phpcs": {}
   "linter-sass-lint": {}
-  "linter-ui-default":
-    showPanel: true
+  "linter-ui-default": {}
   metrics:
     userId: "d4f04106661c7c892c48e7ea675a18896355e99a"
   react: {}
