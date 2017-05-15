@@ -7,7 +7,6 @@
     disabledPackages: [
       "language-clojure"
       "language-go"
-      "language-java"
       "language-mustache"
       "language-toml"
     ]
