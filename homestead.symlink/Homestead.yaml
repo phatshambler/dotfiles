@@ -24,7 +24,7 @@ sites:
       alias: "www.ffframe.com *.ffframe.com richardmartineau.ca *.richardmartineau.ca"
     - map: manivelle.io
       to: /home/vagrant/Code/manivelle/backend/public
-      alias: "*.manivelle.io *.ecrans.manivelle.io"
+      alias: "*.manivelle.io *.ecrans.manivelle.io api.manivelle.io"
     - map: telecommande
       to: /home/vagrant/Code/telecommande/public
       alias: "*.telecommande"
