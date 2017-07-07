@@ -7,7 +7,6 @@
     disabledPackages: [
       "language-clojure"
       "language-go"
-      "language-java"
       "language-mustache"
       "language-toml"
     ]
@@ -99,12 +98,22 @@
   "linter-phpcs": {}
   "linter-sass-lint": {}
   "linter-ui-default":
-    showPanel: true
+    panelHeight: 81
   metrics:
     userId: "d4f04106661c7c892c48e7ea675a18896355e99a"
   react: {}
   "release-notes":
     viewedVersion: "0.92.0"
+  "todo-show":
+    ignoreThesePaths: [
+      "node_modules"
+      "vendor"
+      "bower_components"
+      "public/js"
+      "dist/"
+      "vendor/"
+    ]
+    sortAscending: false
   "tree-view":
     hideIgnoredNames: true
   welcome:
