@@ -52,7 +52,8 @@ sites:
     - map: manivelle-interface
       to: /home/vagrant/Code/manivelle/interface/dist
     - map: microdoc
-      to: /home/vagrant/Code/urbania/microdoc/public
+      alias: "*.microdoc"
+      to: /home/vagrant/Code/urbania/microdoc-backend/public
     - map: urbania
       to: /home/vagrant/Code/urbania/urbania.artv.ca/public
 

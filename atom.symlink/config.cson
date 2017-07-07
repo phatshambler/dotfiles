@@ -104,6 +104,16 @@
   react: {}
   "release-notes":
     viewedVersion: "0.92.0"
+  "todo-show":
+    ignoreThesePaths: [
+      "node_modules"
+      "vendor"
+      "bower_components"
+      "public/js"
+      "dist/"
+      "vendor/"
+    ]
+    sortAscending: false
   "tree-view":
     hideIgnoredNames: true
   welcome:
