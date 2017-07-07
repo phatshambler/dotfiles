@@ -1,7 +1,0 @@
-windows:
-  - name: urbania
-    root: ~/Code/urbania
-    layout: even-horizontal
-    panes:
-      - ssh www@server3
-      - ssh rc-urbania
