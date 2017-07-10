@@ -6,7 +6,7 @@
 # using Homebrew.
 
 sudo chown -R $USER:admin /usr/local
-sudo chmod -R 755 /usr/local
+sudo chmod -R 775 /usr/local
 
 # Check for Homebrew
 if test ! $(which brew)
