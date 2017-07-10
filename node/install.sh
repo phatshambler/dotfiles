@@ -1,4 +1,4 @@
-npm_global="bower yo gulp grunt-cli react-native cordova"
+npm_global="bower yo gulp grunt-cli react-native cordova yarn"
 
 export NVM_DIR=~/.nvm
 if [ ! -d "$NVM_DIR" ]; then
