@@ -7,6 +7,7 @@ tap 'homebrew/php'
 
 brew 'ack'
 brew 'ansible'
+brew 'awscli'
 brew 'awsebcli'
 brew 'coreutils'
 brew 'dockutil'
