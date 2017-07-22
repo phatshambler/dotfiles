@@ -1364,7 +1364,7 @@
 			<key>Window Type</key>
 			<integer>2</integer>
 			<key>Working Directory</key>
-			<string>/Users/dmp</string>
+			<string>~/</string>
 		</dict>
 	</array>
 	<key>NoSyncConfirmBeta</key>
@@ -1446,7 +1446,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/dmp/.dotfiles/iterm/</string>
+	<string>~/.dotfiles/iterm/</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -2275,7 +2275,7 @@
 													<key>Window Type</key>
 													<integer>2</integer>
 													<key>Working Directory</key>
-													<string>/Users/dmp</string>
+													<string>~</string>
 												</dict>
 												<key>Bookmark Name</key>
 												<string>Default</string>
@@ -2285,18 +2285,13 @@
 												<array/>
 												<key>Directories</key>
 												<array>
-													<string>/Users/dmp</string>
-													<string>/Users/dmp</string>
-													<string>/Users/dmp/Code/archives.nte.qc.ca</string>
-													<string>/Users/dmp/Code/archives.nte.qc.ca</string>
-													<string>/Users/dmp/Code</string>
-													<string>/Users/dmp/Code</string>
-													<string>/Users/dmp</string>
+													<string>~</string>
+													<string>~/Code</string>
 												</array>
 												<key>Environment</key>
 												<dict>
 													<key>PWD</key>
-													<string>/Users/dmp/Code/archives.nte.qc.ca</string>
+													<string>~/Code/archives.nte.qc.ca</string>
 												</dict>
 												<key>Hosts</key>
 												<array/>
@@ -2326,7 +2321,7 @@
 												<key>TTY</key>
 												<string>/dev/ttys000</string>
 												<key>Working Directory</key>
-												<string>/Users/dmp</string>
+												<string>~</string>
 											</dict>
 											<key>View Type</key>
 											<string>SessionView</string>
@@ -3071,7 +3066,7 @@
 													<key>Window Type</key>
 													<integer>2</integer>
 													<key>Working Directory</key>
-													<string>/Users/dmp</string>
+													<string>~</string>
 												</dict>
 												<key>Bookmark Name</key>
 												<string>Default</string>
@@ -3081,13 +3076,13 @@
 												<array/>
 												<key>Directories</key>
 												<array>
-													<string>/Users/dmp</string>
-													<string>/Users/dmp</string>
+													<string>~</string>
+													<string>~</string>
 												</array>
 												<key>Environment</key>
 												<dict>
 													<key>PWD</key>
-													<string>/Users/dmp</string>
+													<string>~</string>
 												</dict>
 												<key>Hosts</key>
 												<array/>
@@ -3117,7 +3112,7 @@
 												<key>TTY</key>
 												<string>/dev/ttys001</string>
 												<key>Working Directory</key>
-												<string>/Users/dmp</string>
+												<string>~</string>
 											</dict>
 											<key>View Type</key>
 											<string>SessionView</string>
@@ -3882,7 +3877,7 @@
 													<key>Window Type</key>
 													<integer>2</integer>
 													<key>Working Directory</key>
-													<string>/Users/dmp</string>
+													<string>~</string>
 												</dict>
 												<key>Bookmark Name</key>
 												<string>Default</string>
@@ -3892,18 +3887,18 @@
 												<array/>
 												<key>Directories</key>
 												<array>
-													<string>/Users/dmp</string>
-													<string>/Users/dmp/Code/lachapelle.org</string>
-													<string>/Users/dmp/Code/lachapelle.org</string>
-													<string>/Users/dmp/Code/lachapelle.org</string>
-													<string>/Users/dmp/Code/lachapelle.org</string>
-													<string>/Users/dmp/Code</string>
-													<string>/Users/dmp</string>
+													<string>~</string>
+													<string>~/Code/lachapelle.org</string>
+													<string>~/Code/lachapelle.org</string>
+													<string>~/Code/lachapelle.org</string>
+													<string>~/Code/lachapelle.org</string>
+													<string>~/Code</string>
+													<string>~</string>
 												</array>
 												<key>Environment</key>
 												<dict>
 													<key>PWD</key>
-													<string>/Users/dmp/Code/lachapelle.org</string>
+													<string>~/Code/lachapelle.org</string>
 												</dict>
 												<key>Hosts</key>
 												<array/>
@@ -3933,7 +3928,7 @@
 												<key>TTY</key>
 												<string>/dev/ttys002</string>
 												<key>Working Directory</key>
-												<string>/Users/dmp</string>
+												<string>~</string>
 											</dict>
 											<key>View Type</key>
 											<string>SessionView</string>
@@ -4678,7 +4673,7 @@
 													<key>Window Type</key>
 													<integer>2</integer>
 													<key>Working Directory</key>
-													<string>/Users/dmp</string>
+													<string>~</string>
 												</dict>
 												<key>Bookmark Name</key>
 												<string>Default</string>
@@ -4688,13 +4683,13 @@
 												<array/>
 												<key>Directories</key>
 												<array>
-													<string>/Users/dmp</string>
-													<string>/Users/dmp</string>
+													<string>~</string>
+													<string>~</string>
 												</array>
 												<key>Environment</key>
 												<dict>
 													<key>PWD</key>
-													<string>/Users/dmp</string>
+													<string>~</string>
 												</dict>
 												<key>Hosts</key>
 												<array/>
@@ -4724,7 +4719,7 @@
 												<key>TTY</key>
 												<string>/dev/ttys003</string>
 												<key>Working Directory</key>
-												<string>/Users/dmp</string>
+												<string>~</string>
 											</dict>
 											<key>View Type</key>
 											<string>SessionView</string>

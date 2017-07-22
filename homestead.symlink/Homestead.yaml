@@ -56,6 +56,8 @@ sites:
       to: /home/vagrant/Code/urbania/microdoc-backend/public
     - map: urbania
       to: /home/vagrant/Code/urbania/urbania.artv.ca/public
+    - map: imstillyourchild.com
+      to: /home/vagrant/Code/imstillyourchild.com/public
 
 databases:
     - ffframe
@@ -68,6 +70,7 @@ databases:
     - atimetoswim
     - microdoc
     - urbania
+    - imstillyourchild
 
 # blackfire:
 #     - id: foo
