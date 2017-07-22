@@ -57,6 +57,7 @@ brew 'wine'
 brew 'yarn'
 
 cask 'java'
+cask 'arq'
 cask 'android-sdk'
 cask 'android-studio'
 cask 'arduino'
