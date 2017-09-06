@@ -58,6 +58,8 @@ sites:
       to: /home/vagrant/Code/urbania/urbania.artv.ca/public
     - map: imstillyourchild.com
       to: /home/vagrant/Code/imstillyourchild.com/public
+    - map: cortege.ca
+      to: /home/vagrant/Code/cortege.ca/public
 
 databases:
     - ffframe
@@ -71,6 +73,7 @@ databases:
     - microdoc
     - urbania
     - imstillyourchild
+    - cortege
 
 # blackfire:
 #     - id: foo

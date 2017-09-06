@@ -101,6 +101,8 @@
     panelHeight: 81
   metrics:
     userId: "d4f04106661c7c892c48e7ea675a18896355e99a"
+  phpunit:
+    execPath: "./vendor/bin/phpunit"
   react: {}
   "release-notes":
     viewedVersion: "0.92.0"
