@@ -1,0 +1,2 @@
+#!/bin/sh
+rsync -va /Volumes/Photos/Photos/ /Volumes/LaCie/Photos/
