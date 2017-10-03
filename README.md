@@ -1,7 +1,6 @@
 # dmongeau dotfiles
 Based on (holman dotfiles)[https://github.com/dmongeau/dotfiles]
 
-
 Your dotfiles are how you personalize your system. These are mine.
 
 I was a little tired of having long alias files and everything strewn about
@@ -35,7 +34,7 @@ There's a few special files in the hierarchy.
 
 - **bin/**: Anything in `bin/` will get added to your `$PATH` and be made
   available everywhere.
-- **Brewfile**: This is a list of applications for [Homebrew Cask](http://caskroom.io) to install: things like Chrome and 1Password and Adium and stuff. Might want to edit this file before running any initial setup.
+- **Brewfile**: This is a list of applications for [Homebrew Cask](https://caskroom.github.io) to install: things like Chrome and 1Password and Adium and stuff. Might want to edit this file before running any initial setup.
 - **topic/\*.zsh**: Any files ending in `.zsh` get loaded into your
   environment.
 - **topic/path.zsh**: Any file named `path.zsh` is loaded first and is
