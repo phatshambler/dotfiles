@@ -27,6 +27,8 @@ brew 'homebrew/php/php70-imagick', from_source: true
 brew 'homebrew/php/php70-gmagick'
 brew 'kops'
 brew 'kubectl'
+brew 'kubernetes-helm'
+brew 'kube-aws'
 brew 'lame'
 brew 'libcaca', args: ['with-imlib2']
 brew 'libgit2'
