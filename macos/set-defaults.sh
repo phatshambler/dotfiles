@@ -84,7 +84,7 @@ defaults write com.apple.AppleMultitouchTrackpad TrackpadCornerSecondaryClick -i
 defaults write com.apple.AppleMultitouchTrackpad TrackpadRightClick -bool false
 
 # Set a really fast keyboard repeat rate.
-defaults write NSGlobalDomain KeyRepeat -float 0.000000000001
+defaults write NSGlobalDomain KeyRepeat -float 0.01
 
 # Disable press-and-hold for keys in favor of key repeat.
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
@@ -101,7 +101,7 @@ defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 5
 
 # Save screenshots to the desktop
-defaults write com.apple.screencapture location -string "${HOME}/Dropbox (Personnelle)/Captures d'écran"
+defaults write com.apple.screencapture location -string "${HOME}/Dropbox/Captures d'écran"
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
 defaults write com.apple.screencapture type -string "png"
@@ -172,7 +172,7 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 	General -bool true \
 	OpenWith -bool true \
 	Privileges -bool true
-    
+
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
