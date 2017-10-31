@@ -54,7 +54,6 @@ brew 'wget'
 brew 'youtube-dl'
 brew 'zsh'
 brew 'wakeonlan'
-brew 'wine'
 
 cask 'java'
 cask 'arq'
