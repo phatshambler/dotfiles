@@ -9,6 +9,7 @@
       "language-go"
       "language-mustache"
       "language-toml"
+      "language-javascript-jsx"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
