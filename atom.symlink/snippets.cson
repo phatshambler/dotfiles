@@ -8,8 +8,7 @@
 #
 # An example CoffeeScript snippet to expand log to console.log:
 #
-# '.source.coffee':
-#   'Console log':
-#     'prefix': 'log'
-#     'body': 'console.log $1'
-#
+'.source.jsx':
+  'Ref':
+    'prefix': 'ref'
+    'body': 'ref={(ref) => { this.ref$1 = ref; }}'

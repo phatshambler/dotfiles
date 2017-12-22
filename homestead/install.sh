@@ -1,1 +1,1 @@
-git clone https://github.com/laravel/homestead.git ~/Code/Homestead
+git clone https://github.com/FolkloreAtelier/homestead.git ~/Code/Homestead

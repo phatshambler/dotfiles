@@ -2,10 +2,14 @@ atom.symlink/.apm
 atom.symlink/.node-gyp
 atom.symlink/.storage
 atom.symlink/blob-store
+atom.symlink/recovery
 atom.symlink/compile-cache/
 atom.symlink/packages
 atom.symlink/storage
 atom.symlink/themes
+
+git/gitconfig.symlink
+git/gitconfig.local.symlink
 
 bin/font-compression-reference/brotli/dec
 bin/font-compression-reference/brotli/enc
@@ -14,8 +18,3 @@ bin/font-compression-reference/woff2/woff2_compress
 bin/font-compression-reference/woff2/woff2_decompress
 
 npm_debug.log
-atom.symlink/blob-store
-atom.symlink/recovery
-
-git/gitconfig.symlink
-git/gitconfig.local.symlink
