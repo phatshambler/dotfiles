@@ -1,0 +1,74 @@
+[
+  {
+    title: "Dotfiles"
+    paths: [
+      "/Users/folklore/.dotfiles"
+    ]
+  }
+  {
+    title: "Archives Nte"
+    paths: [
+      "/Users/folklore/Code/archives.nte.qc.ca"
+    ]
+  }
+  {
+    title: "Sidlee Agropur"
+    paths: [
+      "/Users/folklore/Code/sidlee-agropur"
+    ]
+  }
+  {
+    title: "React Draw"
+    paths: [
+      "/Users/folklore/react-draw"
+    ]
+  }
+  {
+    title: "Lachapelle Org"
+    paths: [
+      "/Users/folklore/Code/lachapelle.org"
+    ]
+  }
+  {
+    title: "Popperscoolers Com"
+    paths: [
+      "/Users/folklore/Code/popperscoolers.com"
+    ]
+  }
+  {
+    title: "Lionbuses Com"
+    paths: [
+      "/Users/folklore/Code/lionbuses.com"
+    ]
+  }
+  {
+    title: "Panneau"
+    paths: [
+      "/Users/folklore/Code/panneau"
+    ]
+  }
+  {
+    title: "Eloquent Mediatheque"
+    paths: [
+      "/Users/folklore/Code/eloquent-mediatheque"
+    ]
+  }
+  {
+    title: "Urbania Interface"
+    paths: [
+      "/Users/folklore/Code/urbania-interface"
+    ]
+  }
+  {
+    title: "Crise Onf Ca"
+    paths: [
+      "/Users/folklore/code/crise.onf.ca"
+    ]
+  }
+  {
+    title: "Lesvoixdemaisonneuve"
+    paths: [
+      "/Users/folklore/Code/lesvoixdemaisonneuve"
+    ]
+  }
+]
