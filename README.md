@@ -1,4 +1,4 @@
-# dmongeau dotfiles
+# Phat dotfiles
 Based on (holman dotfiles)[https://github.com/dmongeau/dotfiles]
 
 

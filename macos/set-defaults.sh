@@ -12,7 +12,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # General UI/UX                                                               #
 ###############################################################################
 
-#Disabled dashboard
+# Disabled dashboard
 defaults write com.apple.dashboard mcx-disabled -boolean YES
 
 # Disable the sound effects on boot
@@ -25,7 +25,7 @@ defaults write com.apple.universalaccess reduceTransparency -bool true
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
 
 # Always show scrollbars
-defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
+defaults write NSGlobalDomain AppleShowScrollBars -string "Automatic"
 # Possible values: `WhenScrolling`, `Automatic` and `Always`
 
 # Expand save panel by default
@@ -172,7 +172,7 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 	General -bool true \
 	OpenWith -bool true \
 	Privileges -bool true
-    
+
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################

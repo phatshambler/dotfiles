@@ -1,136 +1,23 @@
 "*":
-  "atom-jshint":
-    hintOnModify: false
-  "autocomplete-plus":
-    confirmCompletion: "tab"
+  "autocomplete-python":
+    useKite: false
   core:
-    disabledPackages: [
-      "language-clojure"
-      "language-go"
-      "language-java"
-      "language-mustache"
-      "language-perl"
-      "language-toml"
-    ]
-    excludeVcsIgnoredPaths: false
-    ignoredNames: [
-      ".git"
-      ".sass-cache"
-      ".DS_Store"
-      "composer.lock"
-    ]
-    projectHome: "~/Code"
-    telemetryConsent: "limited"
+    telemetryConsent: "no"
     themes: [
-      "atom-dark-ui"
-      "base16-tomorrow-dark-theme"
+      "one-dark-ui"
+      "dracula-syntax"
     ]
-  dash:
-    grammars:
-      ActionScript: [
-        "actionscript"
-      ]
-      CSS: [
-        "css"
-        "bootstrap"
-      ]
-      HTML: [
-        "html"
-        "underscore"
-        "backbone"
-        "jquery"
-        "javascript"
-        "css"
-      ]
-      JavaScript: [
-        "nodejs"
-        "underscore"
-        "backbone"
-        "grunt"
-        "express"
-        "require"
-        "jquery"
-        "javascript"
-      ]
-      PHP: [
-        "php"
-        "laravel"
-      ]
-      SQL: [
-        "mysql"
-      ]
-      SVG: [
-        "svg"
-      ]
-      Sass: [
-        "compass"
-        "sass"
-        "css"
-      ]
-      "Shell Scripts": [
-        "bash"
-        "manpages"
-      ]
-  docblockr: {}
   editor:
-    fontSize: 12
-    invisibles: {}
-    nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
-    showIndentGuide: true
-    tabLength: 4
-    tabType: "soft"
+    fontSize: 13
   "exception-reporting":
-    userId: "bf3ab42e-1c26-e9b9-141a-bbcd1e367d22"
-  "gist-it": {}
-  "git-diff":
-    showIconsInEditorGutter: true
-  jshint: {}
+    userId: "8b8bf9c8-3d68-4b2e-8ba5-c4b0cb337f44"
   linter:
     lintOnChange: false
-    showErrorPanel: false
-    showGutters: false
-    statusBar: "Show error if the cursor is in range"
-    subtleLinterErrors: [
-      "jshint"
-      "php"
-      "phpcs"
-      "phpmd"
-    ]
-  "linter-eslint": {}
-  "linter-jshint":
-    disableWhenNoJshintrcFileInPath: true
-  "linter-php": {}
-  "linter-phpcs": {}
-  "linter-sass-lint": {}
-  metrics:
-    userId: "d4f04106661c7c892c48e7ea675a18896355e99a"
-  react: {}
-  "release-notes":
-    viewedVersion: "0.92.0"
-  "tree-view":
-    hideIgnoredNames: true
+  "linter-ui-default": {}
+  "pretty-json": {}
   welcome:
     showOnStartup: false
-  whitespace: {}
-".arduino.source":
-  editor:
-    nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
 ".blade.html.php.text":
   editor:
     commentEnd: " --}}"
     commentStart: "{{-- "
-    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-"
-    tabLength: 4
-".coffee.jsx.source":
-  editor:
-    nonWordCharacters: "./\\\\()\\\"':,.;<>~!@#$%^&*|+=[]{}`~?"
-".html.js.text":
-  editor:
-    nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
-    tabLength: 4
-".js.jsx.source":
-  editor:
-    nonWordCharacters: "./\\\\()\\\"':,.;<>~!@#$%^&*|+=[]{}`~?"
-".js.source":
-  editor:
-    nonWordCharacters: "./\\\\()\\\"':,.;<>~!@#$%^&*|+=[]{}`~?"

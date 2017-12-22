@@ -46,6 +46,7 @@ brew 'yarn'
 brew 'youtube-dl'
 brew 'zsh'
 brew 'wakeonlan'
+brew 'awscli'
 
 cask 'arduino'
 cask 'atom'

@@ -17,6 +17,13 @@ folders:
 map_suffix: .homestead.flklr.ca .local.flklr.ca
 
 sites:
+    - map: urbania
+      to: /home/vagrant/Code/urbania/urbania.artv.ca/public
+    - map: microdoc.ca
+      to: /home/vagrant/Code/urbania/microdoc-backend/public
+      alias: "*.microdoc.ca micromag.ca *.micromag.ca"
+    - map: lionbuses.com
+      to: /home/vagrant/Code/lionbuses.com/public
     - map: easternbloc.ca
       to: /home/vagrant/Code/easternbloc.ca/public
     - map: ffframe.com
@@ -24,7 +31,7 @@ sites:
       alias: "www.ffframe.com *.ffframe.com richardmartineau.ca *.richardmartineau.ca"
     - map: manivelle.io
       to: /home/vagrant/Code/manivelle/backend/public
-      alias: "*.manivelle.io *.ecrans.manivelle.io"
+      alias: "*.manivelle.io *.ecrans.manivelle.io api.manivelle.io"
     - map: telecommande
       to: /home/vagrant/Code/telecommande/public
       alias: "*.telecommande"
@@ -46,14 +53,32 @@ sites:
       to: /home/vagrant/Code/popperscoolers.com/public
     - map: folklore.quebec
       to: /home/vagrant/Code/folklore.quebec/public
+    - map: imstillyourchild.com
+      to: /home/vagrant/Code/imstillyourchild.com/public
+    - map: crise.onf.ca
+      to: /home/vagrant/Code/crise.onf.ca/dist
+    - map: maracas-display
+      to: /home/vagrant/Code/maracas-display/public
+    - map: lesvoixdemaisonneuve.ca
+      to: /home/vagrant/Code/lesvoixdemaisonneuve/public
+    - map: laserre.ca
+      to: /home/vagrant/Code/laserre.ca/public
 
 databases:
+    - lionbuses.com
     - ffframe
     - manivelle
     - hackathon
     - telecommande
     - lachapelle
     - nte_archives
+    - urbania
+    - imstillyourchild
+    - microdoc
+    - easternbloc
+    - maracas_display
+    - lesvoixdemaisonneuve
+    - laserre
 
 # blackfire:
 #     - id: foo
