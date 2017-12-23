@@ -7,11 +7,10 @@ fi
 
 source $(brew --prefix nvm)/nvm.sh
 
-nvm use latest
+nvm install 8
+nvm use 8
+nvm alias default 8
 npm update -g npm
 npm install -g $npm_global
-
-nvm use latest
-nvm alias default latest
 
 exit 0

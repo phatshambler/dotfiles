@@ -5,8 +5,7 @@
 # This installs some of the common dependencies needed (or at least desired)
 # using Homebrew.
 
-sudo chown -R $USER:admin /usr/local
-sudo chmod -R 775 /usr/local
+sudo chown -R $(whoami) $(brew --prefix)/*
 
 # Check for Homebrew
 if test ! $(which brew)
