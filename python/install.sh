@@ -1,4 +1,6 @@
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
 pip install --upgrade pip setuptools
-sudo easy_install SpoofMAC
+easy_install SpoofMAC
 
 exit 0
