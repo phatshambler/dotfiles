@@ -54,9 +54,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
-export NVM_DIR="/Users/dmp/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
 PATH="/Users/dmp/perl5/bin${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="/Users/dmp/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
 PERL_LOCAL_LIB_ROOT="/Users/dmp/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
@@ -65,3 +62,6 @@ PERL_MM_OPT="INSTALL_BASE=/Users/dmp/perl5"; export PERL_MM_OPT;
 
 # added by travis gem
 [ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
