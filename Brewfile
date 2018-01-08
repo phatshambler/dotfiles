@@ -35,7 +35,6 @@ brew 'lame'
 brew 'libcaca', args: ['with-imlib2']
 brew 'libgit2'
 brew 'mysql'
-brew 'nvm'
 brew 'openssl'
 brew 'packer'
 brew 'postgresql'
