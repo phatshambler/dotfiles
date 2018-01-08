@@ -4,7 +4,7 @@
 #
 # This installs Compass.
 
-gem install compass sass scss-lint
+gem install compass sass scss_lint
 
 rbenv rehash
 

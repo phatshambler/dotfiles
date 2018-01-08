@@ -52,7 +52,9 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-export NVM_DIR="/Users/folklore/.nvm"
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
+export NVM_DIR="/Users/$(whoami)/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 PATH="/Users/folklore/perl5/bin${PATH:+:${PATH}}"; export PATH;
