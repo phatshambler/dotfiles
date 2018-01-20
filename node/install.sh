@@ -1,11 +1,9 @@
 npm_global="bower yo gulp grunt-cli react-native cordova yarn spoof"
 
-export NVM_DIR=~/.nvm
-if [ ! -d "$NVM_DIR" ]; then
-    mkdir $NVM_DIR
-fi
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
 
-source $(brew --prefix nvm)/nvm.sh
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 nvm install 8
 nvm use 8
