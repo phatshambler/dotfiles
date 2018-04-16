@@ -1,4 +1,4 @@
-npm_global="bower yo gulp grunt-cli react-native cordova yarn spoof"
+npm_global="bower yo gulp grunt-cli react-native cordova yarn spoof pm2 babel-cli"
 
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.9/install.sh | bash
 
