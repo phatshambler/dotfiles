@@ -2,19 +2,7 @@
   "autocomplete-python":
     useKite: false
   core:
-    disabledPackages: [
-      "language-clojure"
-      "language-go"
-      "language-mustache"
-      "language-toml"
-    ]
-    excludeVcsIgnoredPaths: false
-    ignoredNames: [
-      ".git"
-      ".DS_Store"
-    ]
-    projectHome: "~/Code"
-    telemetryConsent: "limited"
+    telemetryConsent: "no"
     themes: [
       "one-dark-ui"
       "dracula-syntax"
@@ -22,43 +10,15 @@
   editor:
     fontSize: 13
   "exception-reporting":
-    userId: "8b8bf9c8-3d68-4b2e-8ba5-c4b0cb337f44"
-  linter:
-    lintOnChange: false
-    showGutters: false
-    statusBar: "Show error if the cursor is in range"
-    subtleLinterErrors: [
-      "jshint"
-      "php"
-      "phpcs"
-      "phpmd"
-    ]
-  "linter-eslint": {}
-  "linter-jshint":
-    disableWhenNoJshintrcFileInPath: true
-  "linter-php": {}
-  "linter-phpcs": {}
-  "linter-sass-lint": {}
-  "linter-ui-default": {}
-  metrics:
-    userId: "d4f04106661c7c892c48e7ea675a18896355e99a"
-  phpunit:
-    execPath: "./vendor/bin/phpunit"
-  react: {}
-  "release-notes":
-    viewedVersion: "0.92.0"
-  "todo-show":
-    ignoreThesePaths: [
-      "node_modules"
-      "vendor"
-      "bower_components"
-      "public/js"
-      "dist/"
-      "vendor/"
-    ]
-    sortAscending: false
-  "tree-view":
-    hideIgnoredNames: true
+    userId: "7f7d215f-567b-4065-be21-503224ce3861"
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+      showInStatusBar: true
+    prettierEslintOptions: {}
+    prettierOptions:
+      singleQuote: true
+    useEslint: true
   welcome:
     showOnStartup: false
 ".blade.html.php.text":

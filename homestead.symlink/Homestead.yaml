@@ -63,6 +63,12 @@ sites:
       to: /home/vagrant/Code/lesvoixdemaisonneuve/public
     - map: laserre.ca
       to: /home/vagrant/Code/laserre.ca/public
+    - map: alpha-omega.artv.ca
+      to: /home/vagrant/Code/alpha-omega.artv.ca/public
+    - map: catbirdproductions.ca
+      to: /home/vagrant/Code/catbirdproductions.ca/public
+    - map: folkloreinc.ca
+      to: /home/vagrant/folklore.inc/public
 
 databases:
     - lionbuses.com
@@ -79,6 +85,9 @@ databases:
     - maracas_display
     - lesvoixdemaisonneuve
     - laserre
+    - alpha-omega
+    - catbirdproductions
+    - folkloreinc
 
 # blackfire:
 #     - id: foo

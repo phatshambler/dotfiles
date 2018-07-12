@@ -51,8 +51,8 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+export PATH="/Users/nrb/.composer/vendor/bin:$PATH"
 
 PATH="/Users/folklore/perl5/bin${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="/Users/folklore/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;

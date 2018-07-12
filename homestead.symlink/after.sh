@@ -6,7 +6,7 @@
 
 sudo add-apt-repository ppa:chris-needham/ppa
 sudo apt-get update
-sudo apt-get -y install chromium-browser xvfb pulseaudio ffmpeg libfdk-aac-dev php-mcrypt audiowaveform
+sudo apt-get -y install chromium-browser xvfb pulseaudio ffmpeg libfdk-aac-dev php-mcrypt audiowaveform php-imagick traceroute
 
 sudo locale-gen fr_CA
 sudo locale-gen fr_CA.UTF-8
