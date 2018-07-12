@@ -68,7 +68,9 @@ sites:
     - map: catbirdproductions.ca
       to: /home/vagrant/Code/catbirdproductions.ca/public
     - map: folkloreinc.ca
-      to: /home/vagrant/folklore.inc/public
+      to: /home/vagrant/Code/folklore.inc/public
+    - map: signe-laval.ca
+      to: /home/vagrant/Code/signe-laval.ca/public
 
 databases:
     - lionbuses.com
@@ -88,6 +90,7 @@ databases:
     - alpha-omega
     - catbirdproductions
     - folkloreinc
+    - signe_laval
 
 # blackfire:
 #     - id: foo

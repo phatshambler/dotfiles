@@ -1,7 +1,14 @@
 "*":
+  "activate-power-mode":
+    plugins:
+      playAudio: true
+      screenShake: true
   "autocomplete-python":
     useKite: false
   core:
+    disabledPackages: [
+      "activate-power-mode"
+    ]
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
@@ -11,6 +18,10 @@
     fontSize: 13
   "exception-reporting":
     userId: "7f7d215f-567b-4065-be21-503224ce3861"
+  minimap:
+    plugins:
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
   "prettier-atom":
     formatOnSaveOptions:
       enabled: true
