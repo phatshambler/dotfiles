@@ -54,6 +54,7 @@ brew 'zsh'
 brew 'wakeonlan'
 brew 'wine'
 
+cask '1password-cli'
 cask 'arq'
 cask 'android-sdk'
 cask 'android-studio'
