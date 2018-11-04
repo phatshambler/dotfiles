@@ -10,6 +10,7 @@
       "language-mustache"
       "language-toml"
       "react"
+      "linter-jshint"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -107,6 +108,8 @@
   phpunit:
     execPath: "./vendor/bin/phpunit"
   "prettier-atom":
+    formatOnSaveOptions: {}
+    prettierEslintOptions: {}
     prettierOptions:
       singleQuote: true
     useEslint: true

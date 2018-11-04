@@ -9,6 +9,9 @@
 # An example CoffeeScript snippet to expand log to console.log:
 #
 '.source.jsx':
-  'Ref':
-    'prefix': 'ref'
-    'body': 'ref={(ref) => { this.ref$1 = ref; }}'
+    'Ref':
+        'prefix': 'ref'
+        'body': 'ref={(ref) => { this.ref$1 = ref; }}'
+    'importClassName':
+        'prefix': 'import class'
+        'body': 'import classNames from \'classnames\';'
