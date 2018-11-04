@@ -22,8 +22,8 @@ brew 'imagemagick'
 brew 'jp2a'
 brew 'jq'
 brew 'heroku'
-brew 'php@7.0'
-brew 'php@7.1', link: true
+brew 'php@7.0', link: true
+brew 'php@7.1'
 brew 'kops'
 brew 'kubectl'
 brew 'kubernetes-helm'
