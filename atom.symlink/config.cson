@@ -9,6 +9,8 @@
       "language-go"
       "language-mustache"
       "language-toml"
+      "react"
+      "linter-jshint"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -81,6 +83,7 @@
   "git-diff":
     showIconsInEditorGutter: true
   jshint: {}
+  "language-babel": {}
   linter:
     lintOnChange: false
     showGutters: false
@@ -104,6 +107,12 @@
     userId: "d4f04106661c7c892c48e7ea675a18896355e99a"
   phpunit:
     execPath: "./vendor/bin/phpunit"
+  "prettier-atom":
+    formatOnSaveOptions: {}
+    prettierEslintOptions: {}
+    prettierOptions:
+      singleQuote: true
+    useEslint: true
   react: {}
   "release-notes":
     viewedVersion: "0.92.0"
