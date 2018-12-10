@@ -8,10 +8,13 @@
 #
 # An example CoffeeScript snippet to expand log to console.log:
 #
-'.source.jsx':
-    'Ref':
+'.source.js':
+    'createRef':
+        'prefix': 'this.ref'
+        'body': 'this.ref$1 = React.createRef();'
+    'refProps':
         'prefix': 'ref'
-        'body': 'ref={(ref) => { this.ref$1 = ref; }}'
+        'body': 'ref={this.ref$1}'
     'importClassName':
         'prefix': 'import class'
         'body': 'import classNames from \'classnames\';'
