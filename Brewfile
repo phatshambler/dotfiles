@@ -17,6 +17,7 @@ brew 'css3-font-converter'
 brew 'dockutil'
 brew 'ffmpeg', args: ['with-faac', 'with-freetype', 'with-ffplay', 'with-libssh', 'with-libvorbis', 'with-libvpx', 'with-openjpeg', 'with-speex', 'with-rtmpdump', 'with-theora', 'with-webp', 'with-x265']
 brew 'git'
+brew 'git-lfs'
 brew 'go'
 brew 'grc'
 brew 'imagemagick'
@@ -36,8 +37,8 @@ brew 'php@7.0', link: true
 brew 'php@7.1'
 brew 'postgresql'
 brew 'puma/puma/puma-dev'
-brew 'python'
-brew 'python3'
+brew 'python', link: true
+brew 'python@2'
 brew 'rbenv'
 brew 'readline'
 brew 'ruby-build'
