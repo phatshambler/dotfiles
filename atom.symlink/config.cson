@@ -8,6 +8,7 @@
   core:
     disabledPackages: [
       "activate-power-mode"
+      "linter-phpcs"
     ]
     telemetryConsent: "no"
     themes: [
@@ -18,6 +19,11 @@
     fontSize: 13
   "exception-reporting":
     userId: "7f7d215f-567b-4065-be21-503224ce3861"
+  "linter-phpcs":
+    autoExecutableSearch: false
+  "linter-ui-default":
+    panelHeight: 300
+    showPanel: true
   minimap:
     plugins:
       "highlight-selected": true
