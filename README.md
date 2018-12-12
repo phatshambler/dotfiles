@@ -3,14 +3,14 @@
 ## Avant le formattage
 
 - Backup de la base de données de Homestead
-- Backup du dossier Images
-- Backup du dossier Documents
+- Backup des dossiers Documents, Images, Bureau, Téléchargements, Vidéos et Musique
 - Backup de .ssh
 - Backup de .aws
 - Backup de .localrc
 - Backup de .homestead/Homestead.yaml
 - Backup des VM (sauf homestead)
 - Backup du dossier Code
+- Vérifier que tout ce qui s'applique dans Code est poussé sur git
 - Backup des favoris de Sequel Pro
 - Backup des packages de atom
 - Mise à jour et vérification des dotfiles
@@ -18,12 +18,17 @@
 ## Après le formatage
 
 - Création d'un utilisateur folklore et connecter sur info@atelierfolklore.ca
-- Copie de l'ancienne clé SSH ou création d'une nouvelle
-- Ajout de la nouvelle clé au deploys keys des dotfiles
-- Cloner les dotfiles
+- Copie de l'ancienne clé SSH ou création d'une nouvelle avec une passphrase
+- Configurer ssh-agent pour la clé
+- Ajout de la nouvelle clé aux deploys keys des dotfiles
+- Cloner les dotfiles (installer automatiquement les command line tools)
 - Rouler scripts/bootstrap
-- Configuration de Dropbox
+- Vérifier que tout s'est installé correctement et sinon réinstaller (virtualbox)
+- Installer XCode et l'ouvrir
 - Configuration de 1Password
+- Faire le ménage du dock
+- Créer un dossier Code
+- Activer FileVault
 
 # dotfiles
 
