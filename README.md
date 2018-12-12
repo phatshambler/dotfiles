@@ -1,5 +1,33 @@
-# dmongeau dotfiles
-Based on (holman dotfiles)[https://github.com/dmongeau/dotfiles]
+# Procédure
+
+## Avant le formattage
+
+- Backup de la base de données de Homestead
+- Backup du dossier Images
+- Backup du dossier Documents
+- Backup de .ssh
+- Backup de .aws
+- Backup de .localrc
+- Backup de .homestead/Homestead.yaml
+- Backup des VM (sauf homestead)
+- Backup du dossier Code
+- Backup des favoris de Sequel Pro
+- Backup des packages de atom
+- Mise à jour et vérification des dotfiles
+
+## Après le formatage
+
+- Création d'un utilisateur folklore et connecter sur info@atelierfolklore.ca
+- Copie de l'ancienne clé SSH ou création d'une nouvelle
+- Ajout de la nouvelle clé au deploys keys des dotfiles
+- Cloner les dotfiles
+- Rouler scripts/bootstrap
+- Configuration de Dropbox
+- Configuration de 1Password
+
+# dotfiles
+
+Based on (holman/dmongeau dotfiles)[https://github.com/dmongeau/dotfiles]
 
 Your dotfiles are how you personalize your system. These are mine.
 
