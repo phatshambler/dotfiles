@@ -1,17 +1,14 @@
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+npm_global="bower yo gulp grunt-cli react-native cordova yarn spoof pm2 @babel/cli lerna"
 
-npm_global="bower yo gulp grunt-cli react-native cordova yarn spoof"
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 
-export NVM_DIR=~/.nvm
-if [ ! -d "$NVM_DIR" ]; then
-    mkdir $NVM_DIR
-fi
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-source $(brew --prefix nvm)/nvm.sh
-
-nvm install 8
-nvm use 8
-nvm alias default 8
+nvm install lts/*
+nvm use lts/*
+nvm alias default lts/*
 npm update -g npm
 npm install -g $npm_global
 
