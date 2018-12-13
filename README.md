@@ -1,6 +1,6 @@
 # dotfiles
 
-## Procédure
+## procédure
 
 Voir note sécurisée
 
