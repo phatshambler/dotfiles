@@ -6,7 +6,6 @@
   "autocomplete-python":
     useKite: false
   core:
-    disabledPackages: []
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
@@ -15,13 +14,10 @@
   editor:
     fontSize: 13
   "exception-reporting":
-<<<<<<< HEAD
     userId: "7f7d215f-567b-4065-be21-503224ce3861"
   "linter-phpcs":
     autoExecutableSearch: false
-  "linter-ui-default":
-    panelHeight: 300
-    showPanel: true
+  "linter-ui-default": {}
   minimap:
     plugins:
       "highlight-selected": true
@@ -30,45 +26,10 @@
     formatOnSaveOptions:
       enabled: true
       showInStatusBar: true
-=======
-    userId: "bf3ab42e-1c26-e9b9-141a-bbcd1e367d22"
-  "gist-it": {}
-  "git-diff":
-    showIconsInEditorGutter: true
-  jshint: {}
-  "language-babel": {}
-  linter:
-    lintOnChange: false
-    showGutters: false
-    statusBar: "Show error if the cursor is in range"
-    subtleLinterErrors: [
-      "jshint"
-      "php"
-      "phpcs"
-      "phpmd"
-    ]
-  "linter-eslint": {}
-  "linter-jshint":
-    disableWhenNoJshintrcFileInPath: true
-  "linter-php": {}
-  "linter-phpcs": {}
-  "linter-sass-lint": {}
-  "linter-ui-default": {}
-  "markdown-preview":
-    useGitHubStyle: true
-  metrics:
-    userId: "d4f04106661c7c892c48e7ea675a18896355e99a"
-  phpunit:
-    execPath: "./vendor/bin/phpunit"
-  "prettier-atom":
-    formatOnSaveOptions: {}
->>>>>>> upstream/master
     prettierEslintOptions: {}
     prettierOptions:
       singleQuote: true
     useEslint: true
-<<<<<<< HEAD
-=======
   react: {}
   "release-notes":
     viewedVersion: "0.92.0"
@@ -84,7 +45,6 @@
     sortAscending: false
   "tree-view":
     hideIgnoredNames: true
->>>>>>> upstream/master
   welcome:
     showOnStartup: false
 ".blade.html.php.text":
