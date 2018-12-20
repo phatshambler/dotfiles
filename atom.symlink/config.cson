@@ -17,7 +17,8 @@
     userId: "7f7d215f-567b-4065-be21-503224ce3861"
   "linter-phpcs":
     autoExecutableSearch: false
-  "linter-ui-default": {}
+  "linter-ui-default":
+    panelHeight: 300
   minimap:
     plugins:
       "highlight-selected": true
