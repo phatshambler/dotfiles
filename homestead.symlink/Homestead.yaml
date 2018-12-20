@@ -1,4 +1,3 @@
----
 ip: "192.168.10.10"
 memory: 2048
 cpus: 1
@@ -7,91 +6,41 @@ provider: virtualbox
 authorize: ~/.ssh/id_rsa.pub
 
 keys:
-    - ~/.ssh/id_rsa
+  - ~/.ssh/id_rsa
 
 folders:
-    - map: ~/Code
-      to: /home/vagrant/Code
-      type: nfs
+  - map: ~/Code
+    to: /home/vagrant/Code
+    type: nfs
 
 map_suffix: .homestead.flklr.ca .local.flklr.ca
 
 sites:
-    - map: urbania
-      to: /home/vagrant/Code/urbania/urbania.artv.ca/public
-    - map: microdoc.ca
-      to: /home/vagrant/Code/urbania/microdoc-backend/public
-      alias: "*.microdoc.ca micromag.ca *.micromag.ca"
-    - map: lionbuses.com
-      to: /home/vagrant/Code/lionbuses.com/public
-    - map: easternbloc.ca
-      to: /home/vagrant/Code/easternbloc.ca/public
-    - map: ffframe.com
-      to: /home/vagrant/Code/ffframe.com/public
-      alias: "www.ffframe.com *.ffframe.com richardmartineau.ca *.richardmartineau.ca"
-    - map: manivelle.io
-      to: /home/vagrant/Code/manivelle/backend/public
-      alias: "*.manivelle.io *.ecrans.manivelle.io api.manivelle.io"
-    - map: telecommande
-      to: /home/vagrant/Code/telecommande/public
-      alias: "*.telecommande"
-    - map: hackathon
-      to: /home/vagrant/Code/hackathon-culture/web/public
-      alias: "*.hackathon"
-    - map: archives.nte.qc.ca
-      to: /home/vagrant/Code/archives.nte.qc.ca/public
-      alias: "*.archives.nte.qc.ca"
-    - map: laravel-workbench
-      to: /home/vagrant/Code/laravel-workbench/public
-    - map: lumen-workbench
-      to: /home/vagrant/Code/lumen-workbench/public
-    - map: lachapelle.org
-      to: /home/vagrant/Code/lachapelle.org/public
-    - map: theinvisiblewall.com
-      to: /home/vagrant/Code/theinvisiblewall.com/public
-    - map: popperscoolers.com
-      to: /home/vagrant/Code/popperscoolers.com/public
-    - map: folklore.quebec
-      to: /home/vagrant/Code/folklore.quebec/public
-    - map: imstillyourchild.com
-      to: /home/vagrant/Code/imstillyourchild.com/public
-    - map: crise.onf.ca
-      to: /home/vagrant/Code/crise.onf.ca/dist
-    - map: maracas-display
-      to: /home/vagrant/Code/maracas-display/public
-    - map: lesvoixdemaisonneuve.ca
-      to: /home/vagrant/Code/lesvoixdemaisonneuve/public
-    - map: laserre.ca
-      to: /home/vagrant/Code/laserre.ca/public
-    - map: alpha-omega.artv.ca
-      to: /home/vagrant/Code/alpha-omega.artv.ca/public
-    - map: catbirdproductions.ca
-      to: /home/vagrant/Code/catbirdproductions.ca/public
-    - map: folkloreinc.ca
-      to: /home/vagrant/Code/folklore.inc/public
-    - map: signe-laval.ca
-      to: /home/vagrant/Code/signe-laval.ca/public
+  - map: archives.nte.qc.ca
+    to: /home/vagrant/Code/archives.nte.qc.ca/public
+    alias: "*.archives.nte.qc.ca"
+  - map: lachapelle.org
+    to: /home/vagrant/Code/lachapelle.org/public
+  - map: lesvoixdemaisonneuve.ca
+    to: /home/vagrant/Code/lesvoixdemaisonneuve.ca/public
+  - map: laserre.ca
+    to: /home/vagrant/Code/laserre/public
+  - map: catbirdproductions.ca
+    to: /home/vagrant/Code/catbirdproductions.ca/public
+  - map: folkloreinc.ca
+    to: /home/vagrant/Code/folklore.inc/public
+  - map: signelaval.com
+    to: /home/vagrant/Code/signelaval.com/public
 
 databases:
-    - lionbuses.com
-    - ffframe
-    - manivelle
-    - hackathon
-    - telecommande
-    - lachapelle
-    - nte_archives
-    - urbania
-    - imstillyourchild
-    - microdoc
-    - easternbloc
-    - maracas_display
-    - lesvoixdemaisonneuve
-    - laserre
-    - alpha-omega
-    - catbirdproductions
-    - folkloreinc
-    - signe_laval
-
+  - lachapelle
+  - nte_archives
+  - imstillyourchild
+  - lesvoixdemaisonneuve
+  - laserre
+  - catbirdproductions
+  - folkloreinc
+  - signe_laval
 # blackfire:
 #     - id: foo
 #       token: bar
