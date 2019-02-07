@@ -9,8 +9,8 @@
       "language-go"
       "language-mustache"
       "language-toml"
-      "react"
-      "linter-jshint"
+      "github"
+      "background-tips"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -113,10 +113,12 @@
     prettierOptions:
       singleQuote: true
     useEslint: true
+    useStylelint: true
   react: {}
   "release-notes":
     viewedVersion: "0.92.0"
   "todo-show":
+    autoRefresh: false
     ignoreThesePaths: [
       "node_modules"
       "vendor"
