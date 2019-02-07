@@ -8,9 +8,9 @@
 sudo DEBIAN_FRONTEND=noninteractive apt-get --assume-yes update
 
 # Install extensions
-sudo DEBIAN_FRONTEND=noninteractive apt-get --assume-yes install php7.0-xdebug php7.1-xdebug php-xdebug
-sudo DEBIAN_FRONTEND=noninteractive apt-get --assume-yes install php7.0-gd php7.1-gd php-gd
-sudo DEBIAN_FRONTEND=noninteractive apt-get --assume-yes install php7.0-imagick php7.1-imagick php-imagick
+sudo DEBIAN_FRONTEND=noninteractive apt-get --assume-yes install php-xdebug
+sudo DEBIAN_FRONTEND=noninteractive apt-get --assume-yes install php7.1-gd php7.2-gd php7.3-gd php-gd
+sudo DEBIAN_FRONTEND=noninteractive apt-get --assume-yes install php-imagick
 
 # Install packages
 sudo DEBIAN_FRONTEND=noninteractive apt-get --assume-yes install chromium-browser
@@ -27,6 +27,6 @@ sudo locale-gen en_CA.UTF-8
 sudo update-locale
 
 # Restart PHP FPM
-sudo systemctl restart php7.0-fpm
 sudo systemctl restart php7.1-fpm
 sudo systemctl restart php7.2-fpm
+sudo systemctl restart php7.3-fpm
