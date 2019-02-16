@@ -31,7 +31,6 @@ phpunit@1.2.0
 pigments@0.40.2
 pretty-json@1.6.4
 prettier-atom@0.55.2
-project-manager@3.3.5
 react@0.18.0
 sort-lines@0.18.0
 todo-show@2.3.2

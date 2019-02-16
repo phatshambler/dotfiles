@@ -18,7 +18,6 @@ apm install linter-sass-lint
 apm install minimap
 apm install open-recent
 apm install pigments
-apm install project-manager
 apm install react
 apm install sort-lines
 apm install todo-show

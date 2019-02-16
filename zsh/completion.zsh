@@ -4,4 +4,4 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 # pasting with tabs doesn't perform completion
 zstyle ':completion:*' insert-tab pending
 
-plugins=(git colored-man colorize pip python brew osx zsh-syntax-highlighting)
+plugins=(git colored-man colorize osx zsh-syntax-highlighting)
