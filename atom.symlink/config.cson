@@ -1,6 +1,4 @@
 "*":
-  "atom-jshint":
-    hintOnModify: false
   "autocomplete-plus":
     confirmCompletion: "tab"
   core:
@@ -23,52 +21,6 @@
       "atom-dark-ui"
       "base16-tomorrow-dark-theme"
     ]
-  dash:
-    grammars:
-      ActionScript: [
-        "actionscript"
-      ]
-      CSS: [
-        "css"
-        "bootstrap"
-      ]
-      HTML: [
-        "html"
-        "underscore"
-        "backbone"
-        "jquery"
-        "javascript"
-        "css"
-      ]
-      JavaScript: [
-        "nodejs"
-        "underscore"
-        "backbone"
-        "grunt"
-        "express"
-        "require"
-        "jquery"
-        "javascript"
-      ]
-      PHP: [
-        "php"
-        "laravel"
-      ]
-      SQL: [
-        "mysql"
-      ]
-      SVG: [
-        "svg"
-      ]
-      Sass: [
-        "compass"
-        "sass"
-        "css"
-      ]
-      "Shell Scripts": [
-        "bash"
-        "manpages"
-      ]
   docblockr: {}
   editor:
     fontSize: 12
@@ -100,7 +52,8 @@
   "linter-php": {}
   "linter-phpcs": {}
   "linter-sass-lint": {}
-  "linter-ui-default": {}
+  "linter-ui-default":
+    panelHeight: 409
   "markdown-preview":
     useGitHubStyle: true
   metrics:
@@ -111,7 +64,7 @@
     formatOnSaveOptions: {}
     prettierEslintOptions: {}
     prettierOptions:
-      singleQuote: true
+      singleQuote: false
     useEslint: true
     useStylelint: true
   react: {}
