@@ -11,6 +11,7 @@
       "background-tips"
     ]
     excludeVcsIgnoredPaths: false
+    followSymlinks: false
     ignoredNames: [
       ".git"
       ".DS_Store"
@@ -46,27 +47,21 @@
       "phpcs"
       "phpmd"
     ]
-  "linter-eslint": {}
+  "linter-eslint":
+    autofix: {}
   "linter-jshint":
     disableWhenNoJshintrcFileInPath: true
   "linter-php": {}
   "linter-phpcs": {}
   "linter-sass-lint": {}
   "linter-ui-default":
-    panelHeight: 409
+    showPanel: true
   "markdown-preview":
     useGitHubStyle: true
   metrics:
     userId: "d4f04106661c7c892c48e7ea675a18896355e99a"
   phpunit:
     execPath: "./vendor/bin/phpunit"
-  "prettier-atom":
-    formatOnSaveOptions: {}
-    prettierEslintOptions: {}
-    prettierOptions:
-      singleQuote: false
-    useEslint: true
-    useStylelint: true
   react: {}
   "release-notes":
     viewedVersion: "0.92.0"
@@ -82,6 +77,7 @@
     ]
     sortAscending: false
   "tree-view":
+    alwaysOpenExisting: true
     hideIgnoredNames: true
   welcome:
     showOnStartup: false
