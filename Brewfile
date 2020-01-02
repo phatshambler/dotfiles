@@ -15,7 +15,7 @@ brew 'composer'
 brew 'coreutils'
 brew 'css3-font-converter'
 brew 'dockutil'
-brew 'ffmpeg', args: ['with-faac', 'with-freetype', 'with-ffplay', 'with-libssh', 'with-libvorbis', 'with-libvpx', 'with-openjpeg', 'with-speex', 'with-rtmpdump', 'with-theora', 'with-webp', 'with-x265']
+brew 'ffmpeg', args: ['with-fdk-aac', 'with-freetype', 'with-ffplay', 'with-libssh', 'with-libvorbis', 'with-libvpx', 'with-openjpeg', 'with-speex', 'with-rtmpdump', 'with-theora', 'with-webp', 'with-x265']
 brew 'git'
 brew 'git-lfs'
 brew 'go'
