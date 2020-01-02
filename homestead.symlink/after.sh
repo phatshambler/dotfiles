@@ -9,7 +9,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get --assume-yes update
 
 # Install extensions
 sudo DEBIAN_FRONTEND=noninteractive apt-get --assume-yes install php-xdebug
-sudo DEBIAN_FRONTEND=noninteractive apt-get --assume-yes install php7.1-gd php7.2-gd php7.3-gd php-gd
+sudo DEBIAN_FRONTEND=noninteractive apt-get --assume-yes install php7.1-gd php7.2-gd php7.3-gd php7.4-gd php-gd
 sudo DEBIAN_FRONTEND=noninteractive apt-get --assume-yes install php-imagick
 
 # Install packages
@@ -30,3 +30,4 @@ sudo update-locale
 sudo systemctl restart php7.1-fpm
 sudo systemctl restart php7.2-fpm
 sudo systemctl restart php7.3-fpm
+sudo systemctl restart php7.4-fpm
