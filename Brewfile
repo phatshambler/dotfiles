@@ -53,7 +53,6 @@ brew 'wget'
 brew 'youtube-dl'
 brew 'zsh'
 brew 'wakeonlan'
-brew 'wine'
 
 cask '1password'
 cask '1password-cli'
