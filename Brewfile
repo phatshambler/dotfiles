@@ -28,7 +28,7 @@ brew 'kubectl'
 brew 'kubernetes-helm'
 brew 'kube-aws'
 brew 'lame'
-brew 'libcaca', args: ['with-imlib2']
+brew 'libcaca'
 brew 'libgit2'
 brew 'mysql'
 brew 'openssl'
