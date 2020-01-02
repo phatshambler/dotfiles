@@ -33,8 +33,8 @@ brew 'libgit2'
 brew 'mysql'
 brew 'openssl'
 brew 'packer'
-brew 'php@7.1'
 brew 'php@7.3', link: true
+brew 'php@7.4'
 brew 'postgresql'
 brew 'puma/puma/puma-dev'
 brew 'python', link: true
