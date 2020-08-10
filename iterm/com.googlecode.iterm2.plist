@@ -609,6 +609,8 @@
 	<string>~/.dotfiles/iterm</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{799, 448}</string>
+	<key>NSOverlayScrollersFallBackForAccessoryViews</key>
+	<false/>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -1388,15 +1390,19 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.10beta3</string>
-		<string>3.3.9beta1</string>
-		<string>3.3.8beta5</string>
-		<string>3.3.10beta2</string>
-		<string>3.3.8beta4</string>
-		<string>3.3.8beta3</string>
 		<string>3.3.7</string>
 		<string>3.3.10beta4</string>
+		<string>3.3.12beta3</string>
+		<string>3.3.8beta3</string>
+		<string>3.3.8beta5</string>
+		<string>3.3.10beta3</string>
+		<string>3.3.8beta4</string>
+		<string>3.3.9beta1</string>
 		<string>3.3.10beta1</string>
+		<string>3.3.11beta1</string>
+		<string>3.3.10beta2</string>
+		<string>3.4.0beta1</string>
+		<string>3.3.12beta2</string>
 	</array>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
@@ -1407,8 +1413,10 @@
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>D520AF26-7930-40BD-BFAB-E51D2C14CC89</string>
+	<key>NoSyncLastOSVersion</key>
+	<string>Version 10.15.6 (Build 19G73)</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>130</integer>
+	<integer>201</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1526,6 +1534,14 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
+				<string>selectionLength</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
 				<string>path</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
@@ -1537,6 +1553,14 @@
 				<string>triggerName</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<false/>
+				<key>name</key>
+				<string>parentSession</string>
+				<key>nonterminalContext</key>
+				<integer>1</integer>
 			</dict>
 			<dict>
 				<key>isTerminal</key>
@@ -1655,6 +1679,14 @@
 				<true/>
 				<key>name</key>
 				<string>tmuxStatusLeft</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>selection</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -1906,11 +1938,11 @@
 		<array>
 			<dict>
 				<key>isTerminal</key>
-				<false/>
+				<true/>
 				<key>name</key>
 				<string>currentSession</string>
 				<key>nonterminalContext</key>
-				<integer>1</integer>
+				<integer>0</integer>
 			</dict>
 			<dict>
 				<key>isTerminal</key>
@@ -2098,17 +2130,17 @@
 			</dict>
 			<dict>
 				<key>isTerminal</key>
-				<true/>
+				<false/>
 				<key>name</key>
-				<string>tmuxWindow</string>
+				<string>currentSession</string>
 				<key>nonterminalContext</key>
-				<integer>0</integer>
+				<integer>1</integer>
 			</dict>
 			<dict>
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
-				<string>currentSession</string>
+				<string>tmuxWindow</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -2141,6 +2173,8 @@
 			</dict>
 		</array>
 	</dict>
+	<key>NoSyncRestoreWindowsCount</key>
+	<integer>0</integer>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>599695117.84837997</real>
 	<key>OnlyWhenMoreTabs</key>
@@ -2192,6 +2226,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/dmp/.dotfiles/iterm</string>
+	<key>PreventEscapeSequenceFromClearingHistory</key>
+	<false/>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -2209,11 +2245,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing_new.xml?shard=61</string>
+	<string>https://iterm2.com/appcasts/testing_modern.xml?shard=61</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-05-04T19:46:06Z</date>
+	<date>2020-07-16T18:18:36Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -5546,6 +5582,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.10beta4</string>
+	<string>3.4.0beta1</string>
 </dict>
 </plist>
