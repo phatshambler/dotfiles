@@ -1,6 +1,4 @@
 "*":
-  "atom-jshint":
-    hintOnModify: false
   "autocomplete-plus":
     confirmCompletion: "tab"
   core:
@@ -9,10 +7,12 @@
       "language-go"
       "language-mustache"
       "language-toml"
-      "react"
-      "linter-jshint"
+      "github"
+      "background-tips"
+      "whitespace"
     ]
     excludeVcsIgnoredPaths: false
+    followSymlinks: false
     ignoredNames: [
       ".git"
       ".DS_Store"
@@ -23,60 +23,14 @@
       "atom-dark-ui"
       "base16-tomorrow-dark-theme"
     ]
-  dash:
-    grammars:
-      ActionScript: [
-        "actionscript"
-      ]
-      CSS: [
-        "css"
-        "bootstrap"
-      ]
-      HTML: [
-        "html"
-        "underscore"
-        "backbone"
-        "jquery"
-        "javascript"
-        "css"
-      ]
-      JavaScript: [
-        "nodejs"
-        "underscore"
-        "backbone"
-        "grunt"
-        "express"
-        "require"
-        "jquery"
-        "javascript"
-      ]
-      PHP: [
-        "php"
-        "laravel"
-      ]
-      SQL: [
-        "mysql"
-      ]
-      SVG: [
-        "svg"
-      ]
-      Sass: [
-        "compass"
-        "sass"
-        "css"
-      ]
-      "Shell Scripts": [
-        "bash"
-        "manpages"
-      ]
   docblockr: {}
   editor:
-    fontSize: 12
+    fontSize: 13
     invisibles: {}
     nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
     showIndentGuide: true
+    softWrapAtPreferredLineLength: true
     tabLength: 4
-    tabType: "soft"
   "exception-reporting":
     userId: "bf3ab42e-1c26-e9b9-141a-bbcd1e367d22"
   "gist-it": {}
@@ -94,7 +48,8 @@
       "phpcs"
       "phpmd"
     ]
-  "linter-eslint": {}
+  "linter-eslint":
+    autofix: {}
   "linter-jshint":
     disableWhenNoJshintrcFileInPath: true
   "linter-php": {}
@@ -107,16 +62,11 @@
     userId: "d4f04106661c7c892c48e7ea675a18896355e99a"
   phpunit:
     execPath: "./vendor/bin/phpunit"
-  "prettier-atom":
-    formatOnSaveOptions: {}
-    prettierEslintOptions: {}
-    prettierOptions:
-      singleQuote: true
-    useEslint: true
   react: {}
   "release-notes":
     viewedVersion: "0.92.0"
   "todo-show":
+    autoRefresh: false
     ignoreThesePaths: [
       "node_modules"
       "vendor"
@@ -127,7 +77,9 @@
     ]
     sortAscending: false
   "tree-view":
+    alwaysOpenExisting: true
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
   whitespace: {}
