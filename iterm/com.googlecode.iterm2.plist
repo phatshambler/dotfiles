@@ -3029,7 +3029,7 @@
 												<key>TTY</key>
 												<string>/dev/ttys001</string>
 												<key>Working Directory</key>
-												<string>/Users/dmp/</string>
+												<string>/Users/folklore/</string>
 											</dict>
 											<key>View Type</key>
 											<string>SessionView</string>
@@ -3845,7 +3845,7 @@
 												<key>TTY</key>
 												<string>/dev/ttys002</string>
 												<key>Working Directory</key>
-												<string>/Users/dmp/</string>
+												<string>/Users/folklore/</string>
 											</dict>
 											<key>View Type</key>
 											<string>SessionView</string>
@@ -4636,7 +4636,7 @@
 												<key>TTY</key>
 												<string>/dev/ttys003</string>
 												<key>Working Directory</key>
-												<string>/Users/dmp/</string>
+												<string>/Users/folklore/</string>
 											</dict>
 											<key>View Type</key>
 											<string>SessionView</string>
