@@ -1,45 +1,35 @@
 "*":
-  "activate-power-mode":
-    plugins:
-      playAudio: true
-      screenShake: true
-  "atom-beautify":
-    executables:
-      autopep8:
-        path: "/Users/nicolas/.pyenv/shims/autopep8"
-  "autocomplete-python":
-    useKite: false
+  "autocomplete-plus":
+    confirmCompletion: "tab"
   core:
     disabledPackages: [
-      "autocomplete-paths"
+      "language-clojure"
+      "language-go"
+      "language-mustache"
+      "language-toml"
       "github"
-      "TabNine"
-      "atom-jinja2"
-      "atom-typescript"
-      "autocomplete-glsl"
-      "build-processing"
-      "glsl-preview"
-      "language-pegjs"
-      "language-glsl"
-      "linter-glsl"
-      "linter-processing"
-      "linter-pylama"
-      "pigments"
-      "processing"
-      "processing-autocomplete"
-      "processing-language"
-      "project-manager"
+      "background-tips"
+      "whitespace"
     ]
-    telemetryConsent: "no"
+    excludeVcsIgnoredPaths: false
+    followSymlinks: false
+    ignoredNames: [
+      ".git"
+      ".DS_Store"
+    ]
+    projectHome: "~/Code"
+    telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
       "dracula-syntax"
     ]
-    titleBar: "custom"
-  "css-declaration-sorter":
-    sortOrder: "smacss"
+  docblockr: {}
   editor:
     fontSize: 13
+    invisibles: {}
+    nonWordCharacters: "./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
+    showIndentGuide: true
+    softWrapAtPreferredLineLength: true
     tabLength: 4
   "exception-reporting":
     userId: "7f7d215f-567b-4065-be21-503224ce3861"
@@ -55,30 +45,26 @@
       "**/*.twig.php"
       "**/local/Cellar/php-code-sniffer/**/*.php"
     ]
-    tabWidth: 4
-  "linter-pylama":
-    pylamaVersion: "external"
-  "linter-ui-default":
-    panelHeight: 300
-  minimap:
-    plugins:
-      "highlight-selected": true
-      "highlight-selectedDecorationsZIndex": 0
-  "prettier-atom":
-    formatOnSaveOptions:
-      enabled: true
-      showInStatusBar: true
-    prettierEslintOptions: {}
-    prettierOptions:
-      singleQuote: true
-    useEslint: true
-  "python-black":
-    binPath: "/Users/nicolas/.pyenv/shims/black"
+  "linter-eslint":
+    autofix: {}
+  "linter-jshint":
+    disableWhenNoJshintrcFileInPath: true
+  "linter-php": {}
+  "linter-phpcs": {}
+  "linter-sass-lint": {}
+  "linter-ui-default": {}
+  "markdown-preview":
+    useGitHubStyle: true
+  metrics:
+    userId: "d4f04106661c7c892c48e7ea675a18896355e99a"
+  phpunit:
+    execPath: "./vendor/bin/phpunit"
   react: {}
   "release-notes":
     viewedVersion: "0.92.0"
   "spell-check": {}
   "todo-show":
+    autoRefresh: false
     ignoreThesePaths: [
       "node_modules"
       "vendor"
@@ -89,6 +75,7 @@
     ]
     sortAscending: false
   "tree-view":
+    alwaysOpenExisting: true
     hideIgnoredNames: true
   welcome:
     showOnStartup: false

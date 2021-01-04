@@ -1,6 +1,6 @@
 # Phat dotfiles
 
-## procedure
+## procédure
 
 See note
 
