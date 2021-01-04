@@ -1370,8 +1370,6 @@
 			<string>kNextWindowPointerAction</string>
 		</dict>
 	</dict>
-	<key>PreventEscapeSequenceFromClearingHistory</key>
-	<false/>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -2238,7 +2236,7 @@
 												<key>TTY</key>
 												<string>/dev/ttys000</string>
 												<key>Working Directory</key>
-												<string>~</string>
+												<string>/Users/dmp/</string>
 											</dict>
 											<key>View Type</key>
 											<string>SessionView</string>
