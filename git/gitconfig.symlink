@@ -41,3 +41,5 @@
 	required = true
 [user]
 	name = Nicolas Roy B.
+[pull]
+	rebase = false

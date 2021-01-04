@@ -3,20 +3,61 @@
     plugins:
       playAudio: true
       screenShake: true
+  "atom-beautify":
+    executables:
+      autopep8:
+        path: "/Users/nicolas/.pyenv/shims/autopep8"
   "autocomplete-python":
     useKite: false
   core:
+    disabledPackages: [
+      "autocomplete-paths"
+      "github"
+      "TabNine"
+      "atom-jinja2"
+      "atom-typescript"
+      "autocomplete-glsl"
+      "build-processing"
+      "glsl-preview"
+      "language-pegjs"
+      "language-glsl"
+      "linter-glsl"
+      "linter-processing"
+      "linter-pylama"
+      "pigments"
+      "processing"
+      "processing-autocomplete"
+      "processing-language"
+      "project-manager"
+    ]
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
       "dracula-syntax"
     ]
+    titleBar: "custom"
+  "css-declaration-sorter":
+    sortOrder: "smacss"
   editor:
     fontSize: 13
+    tabLength: 4
   "exception-reporting":
     userId: "7f7d215f-567b-4065-be21-503224ce3861"
+  "fuzzy-finder":
+    scoringSystem: "fast"
+  "language-generic-config":
+    enableAutomatch: false
+    requireMinimumMatchingLines: 5
   "linter-phpcs":
     autoExecutableSearch: false
+    ignorePatterns: [
+      "**/*.blade.php"
+      "**/*.twig.php"
+      "**/local/Cellar/php-code-sniffer/**/*.php"
+    ]
+    tabWidth: 4
+  "linter-pylama":
+    pylamaVersion: "external"
   "linter-ui-default":
     panelHeight: 300
   minimap:
@@ -31,9 +72,12 @@
     prettierOptions:
       singleQuote: true
     useEslint: true
+  "python-black":
+    binPath: "/Users/nicolas/.pyenv/shims/black"
   react: {}
   "release-notes":
     viewedVersion: "0.92.0"
+  "spell-check": {}
   "todo-show":
     ignoreThesePaths: [
       "node_modules"

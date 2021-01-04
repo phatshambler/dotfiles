@@ -6,41 +6,153 @@ provider: virtualbox
 authorize: ~/.ssh/id_rsa.pub
 
 keys:
-  - ~/.ssh/id_rsa
+    - ~/.ssh/id_rsa
 
 folders:
-  - map: ~/Code
-    to: /home/vagrant/Code
-    type: nfs
+    - map: ~/Code
+      to: /home/vagrant/Code
+      type: nfs
 
 map_suffix: .homestead.flklr.ca .local.flklr.ca
 
 sites:
-  - map: archives.nte.qc.ca
-    to: /home/vagrant/Code/archives.nte.qc.ca/public
-    alias: "*.archives.nte.qc.ca"
-  - map: lachapelle.org
-    to: /home/vagrant/Code/lachapelle.org/public
-  - map: lesvoixdemaisonneuve.ca
-    to: /home/vagrant/Code/lesvoixdemaisonneuve.ca/public
-  - map: laserre.ca
-    to: /home/vagrant/Code/laserre/public
-  - map: catbirdproductions.ca
-    to: /home/vagrant/Code/catbirdproductions.ca/public
-  - map: folkloreinc.ca
-    to: /home/vagrant/Code/folklore.inc/public
-  - map: signelaval.com
-    to: /home/vagrant/Code/signelaval.com/public
+    - map: archives.nte.qc.ca
+      to: /home/vagrant/Code/archives.nte.qc.ca/public
+      alias: "*.archives.nte.qc.ca"
+      php: "7.1"
+    - map: lachapelle.org
+      to: /home/vagrant/Code/lachapelle.org/public
+      php: "7.1"
+    - map: lesvoixdemaisonneuve.ca
+      to: /home/vagrant/Code/lesvoixdemaisonneuve.ca/public
+      php: "7.1"
+    - map: laserre.ca
+      to: /home/vagrant/Code/laserre/public
+      php: "7.4"
+    - map: catbirdproductions.ca
+      to: /home/vagrant/Code/catbirdproductions.ca/public
+      php: "7.1"
+    - map: folkloreinc.ca
+      to: /home/vagrant/Code/folklore.inc/public
+      php: "7.3"
+    - map: signelaval.com
+      to: /home/vagrant/Code/signelaval.com/public
+      php: "7.3"
+    - map: joliette3000.ca
+      to: /home/vagrant/Code/joliette3000/public
+      php: "7.3"
+    - map: vini-vins.com
+      to: /home/vagrant/Code/vini-vins.com/public
+      php: "7.4"
+    - map: sexe-des-pigeons.com
+      to: /home/vagrant/Code/sexe-des-pigeons/public
+      php: "7.3"
+    - map: urbania.media
+      to: /home/vagrant/Code/urbania.media
+      php: "7.1"
+    - map: compte.urbania.ca
+      to: /home/vagrant/Code/compte.urbania.ca/public
+      php: "7.3"
+    - map: services.urbania.ca
+      to: /home/vagrant/Code/services.urbania.ca/public
+      php: "7.3"
+    - map: manivelle
+      to: /home/vagrant/Code/manivelle
+      php: "7.3"
+    - map: ia-rires.com
+      to: /home/vagrant/Code/ia-rires.com/public
+      php: "7.3"
+    - map: manivelle.io
+      to: /home/vagrant/Code/manivelle/backend/public
+      alias: "*.manivelle.io *.ecrans.manivelle.io api.manivelle.io"
+      php: "7.1"
+    - map: sexplora.com
+      to: /home/vagrant/Code/sexplora
+    - map: faut-que-ca-change.ca
+      to: /home/vagrant/Code/faut-que-ca-change.ca/public
+      php: "7.3"
+    - map: qr-code-photobooth
+      to: /home/vagrant/Code/qr-code-photobooth/public
+      php: "7.3"
+    - map: qr-code-soundboard
+      to: /home/vagrant/Code/qr-code-soundboard/public
+      php: "7.3"
+    - map: folklore.quebec
+      to: /home/vagrant/Code/folklore.quebec/public
+      php: "7.3"
+    - map: beta.urbania.ca
+      to: /home/vagrant/Code/beta.urbania.ca/public
+      alias: "urbania.ca quatre95.urbania.ca france.urbania.ca universites.urbania.ca urbania.fr beta.urbania.fr"
+      php: "7.3"
+    - map: takis-wifi
+      to: /home/vagrant/Code/takis-wifi/public
+      php: "7.3"
+    - map: center-digital-rights.ca
+      to: /home/vagrant/Code/center-digital-rights.ca/public
+      php: "7.3"
+    - map: nte.qc.ca
+      to: /home/vagrant/Code/nte.qc.ca/public
+      php: "7.3"
+    - map: api.caligram.local
+      to: /home/vagrant/Code/caligram/caligram-api/public
+      php: "7.3"
+    - map: signe-laval-master
+      to: /home/vagrant/Code/signe-laval-master/public
+    - map: findingsally.com
+      to: /home/vagrant/Code/findingsally.com/public
+      php: "7.3"
+    - map: stream.urbania.ca
+      to: /home/vagrant/Code/stream.urbania.ca/public
+      php: "7.3"
+    - map: lachapelle-v2.org
+      to: /home/vagrant/Code/lachapelle-v2/public
+      php: "7.3"
+    - map: festival.mutek.org
+      to: /home/vagrant/Code/festival.mutek.org/public
+      php: "7.4"
+    - map: micromag.ca
+      alias: "*.micromag.ca"
+      to: /home/vagrant/Code/micromag.ca/public
+      php: "7.4"
+    - map: koute.net
+      to: /home/vagrant/Code/koute.net/public
+      php: "7.3"
 
 databases:
-  - lachapelle
-  - nte_archives
-  - imstillyourchild
-  - lesvoixdemaisonneuve
-  - laserre
-  - catbirdproductions
-  - folkloreinc
-  - signe_laval
+    - lachapelle
+    - nte_archives
+    - imstillyourchild
+    - lesvoixdemaisonneuve
+    - laserre
+    - catbirdproductions
+    - folkloreinc
+    - signe_laval
+    - joliette3000
+    - vini_vins
+    - sexe_des_pigeons
+    - urbania_media
+    - urbania_compte
+    - urbania_services
+    - manivelle
+    - ia_rires
+    - sexplora
+    - faut_que_ca_change
+    - qr_code_photobooth
+    - qr_code_soundboard
+    - folklore_quebec
+    - urbania_beta
+    - takis_wifi
+    - center_digital_rights
+    - nte
+    - caligram
+    - finding_sally
+    - urbania_stream
+    - lachapelle_v2
+    - mutek_festival
+    - micromag
+    - entends_tu
+    - koute
+#
 # blackfire:
 #     - id: foo
 #       token: bar
