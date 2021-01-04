@@ -18,3 +18,5 @@ bin/font-compression-reference/woff2/woff2_compress
 bin/font-compression-reference/woff2/woff2_decompress
 
 npm_debug.log
+
+Brewfile.lock.json
