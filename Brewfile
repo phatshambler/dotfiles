@@ -32,8 +32,8 @@ brew 'minikube'
 brew 'mysql'
 brew 'openssl'
 brew 'packer'
-brew 'php@7.3', link: true
-brew 'php@7.4'
+brew 'php@7.3'
+brew 'php@7.4', link: true
 brew 'postgresql'
 brew 'puma/puma/puma-dev'
 brew 'python', link: true

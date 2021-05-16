@@ -10,6 +10,7 @@
       "github"
       "background-tips"
       "whitespace"
+      "linter-php"
     ]
     excludeVcsIgnoredPaths: false
     followSymlinks: false
