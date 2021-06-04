@@ -1,23 +1,52 @@
 #!/bin/sh
-
 # If you would like to do some extra provisioning you may
 # add any commands you wish to this file and they will
 # be run after the Homestead machine is provisioned.
 
 # run apt-get update first, without it I was getting errors not finding the extensions
-sudo DEBIAN_FRONTEND=noninteractive apt-get --assume-yes update
-
+sudo DEBIAN_FRONTEND=noninteractive add-apt-repository ppa:chris-needham/ppa --yes
+sudo DEBIAN_FRONTEND=noninteractive apt-get --yes update
 # Install extensions
-sudo DEBIAN_FRONTEND=noninteractive apt-get --assume-yes install php-xdebug
-sudo DEBIAN_FRONTEND=noninteractive apt-get --assume-yes install php7.1-gd php7.2-gd php7.3-gd php7.4-gd php-gd
-sudo DEBIAN_FRONTEND=noninteractive apt-get --assume-yes install php-imagick
-
+sudo DEBIAN_FRONTEND=noninteractive apt-get --yes install php-xdebug
+sudo DEBIAN_FRONTEND=noninteractive apt-get --yes install php7.1-gd php7.2-gd php7.3-gd php7.4-gd php-gd
+sudo DEBIAN_FRONTEND=noninteractive apt-get --yes install php-imagick
 # Install packages
-sudo DEBIAN_FRONTEND=noninteractive apt-get --assume-yes install chromium-browser
-sudo DEBIAN_FRONTEND=noninteractive apt-get --assume-yes install xvfb
-sudo DEBIAN_FRONTEND=noninteractive apt-get --assume-yes install pulseaudio
-sudo DEBIAN_FRONTEND=noninteractive apt-get --assume-yes install ffmpeg
-source ./audiowaveform.sh
+sudo DEBIAN_FRONTEND=noninteractive apt-get --yes install chromium-browser
+sudo DEBIAN_FRONTEND=noninteractive apt-get --yes install xvfb
+sudo DEBIAN_FRONTEND=noninteractive apt-get --yes install pulseaudio
+sudo DEBIAN_FRONTEND=noninteractive apt-get --yes install ffmpeg
+sudo DEBIAN_FRONTEND=noninteractive apt-get --yes install audiowaveform
+sudo DEBIAN_FRONTEND=noninteractive apt-get --yes install otf-trace
+sudo DEBIAN_FRONTEND=noninteractive apt-get --yes install woff-tools
+sudo DEBIAN_FRONTEND=noninteractive apt-get --yes install fontforge
+sudo DEBIAN_FRONTEND=noninteractive apt-get --yes install default-jre
+
+#WOFF2
+cd $HOME
+git clone --recursive https://github.com/google/woff2.git
+cd woff2
+make clean all
+sudo ln -s $HOME/woff2/woff2_* /usr/local/bin/
+
+# TTf2EOT
+cd $HOME
+git clone https://github.com/wget/ttf2eot.git
+cd ttf2eot
+make
+sudo ln -s $HOME/ttf2eot/ttf2eot /usr/local/bin/
+
+# sfnt2woff
+cd $HOME
+git clone https://github.com/wget/sfnt2woff.git
+cd sfnt2woff
+make
+sudo ln -s $HOME/sfnt2woff/sfnt2woff /usr/local/bin/
+sudo ln -s $HOME/woff2sfnt/woff2sfnt /usr/local/bin/
+
+#css3FontConverter
+cd $HOME
+git clone https://github.com/zoltan-dulac/css3FontConverter.git
+sudo ln -s $HOME/css3FontConverter/convertFonts.sh /usr/local/bin/
 
 # Update locales
 sudo locale-gen fr_CA

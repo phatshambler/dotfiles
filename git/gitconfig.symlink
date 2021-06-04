@@ -43,3 +43,5 @@
 	name = Nicolas Roy B.
 [pull]
 	rebase = false
+[init]
+	defaultBranch = master
