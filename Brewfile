@@ -32,8 +32,7 @@ brew 'mysql'
 brew 'openssl'
 brew 'packer'
 brew 'php@7.3'
-brew 'php@7.4'
-brew 'php@8.0', link: true
+brew 'php@7.4', link: true
 brew 'postgresql'
 brew 'python', link: true
 brew 'rbenv'

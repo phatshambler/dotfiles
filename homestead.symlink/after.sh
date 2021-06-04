@@ -10,9 +10,8 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get --yes update
 sudo DEBIAN_FRONTEND=noninteractive apt-get --yes install php-xdebug
 sudo DEBIAN_FRONTEND=noninteractive apt-get --yes install php7.1-gd php7.2-gd php7.3-gd php7.4-gd php-gd
 sudo DEBIAN_FRONTEND=noninteractive apt-get --yes install php-imagick
+
 # Install packages
-sudo DEBIAN_FRONTEND=noninteractive apt-get --yes install chromium-browser
-sudo DEBIAN_FRONTEND=noninteractive apt-get --yes install xvfb
 sudo DEBIAN_FRONTEND=noninteractive apt-get --yes install pulseaudio
 sudo DEBIAN_FRONTEND=noninteractive apt-get --yes install ffmpeg
 sudo DEBIAN_FRONTEND=noninteractive apt-get --yes install audiowaveform
@@ -22,31 +21,39 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get --yes install fontforge
 sudo DEBIAN_FRONTEND=noninteractive apt-get --yes install default-jre
 
 #WOFF2
-cd $HOME
-git clone --recursive https://github.com/google/woff2.git
-cd woff2
-make clean all
-sudo ln -s $HOME/woff2/woff2_* /usr/local/bin/
+if [ ! -f /usr/local/bin/woff2_compress ]; then
+    cd $HOME
+    git clone --recursive https://github.com/google/woff2.git
+    cd woff2
+    make clean all
+    sudo ln -s $HOME/woff2/woff2_* /usr/local/bin/
+fi
 
 # TTf2EOT
-cd $HOME
-git clone https://github.com/wget/ttf2eot.git
-cd ttf2eot
-make
-sudo ln -s $HOME/ttf2eot/ttf2eot /usr/local/bin/
+if [ ! -f /usr/local/bin/ttf2eot ]; then
+    cd $HOME
+    git clone https://github.com/wget/ttf2eot.git
+    cd ttf2eot
+    make
+    sudo ln -s $HOME/ttf2eot/ttf2eot /usr/local/bin/
+fi
 
 # sfnt2woff
-cd $HOME
-git clone https://github.com/wget/sfnt2woff.git
-cd sfnt2woff
-make
-sudo ln -s $HOME/sfnt2woff/sfnt2woff /usr/local/bin/
-sudo ln -s $HOME/woff2sfnt/woff2sfnt /usr/local/bin/
+if [ ! -f /usr/local/bin/sfnt2woff ]; then
+    cd $HOME
+    git clone https://github.com/wget/sfnt2woff.git
+    cd sfnt2woff
+    make
+    sudo ln -s $HOME/sfnt2woff/sfnt2woff /usr/local/bin/
+    sudo ln -s $HOME/woff2sfnt/woff2sfnt /usr/local/bin/
+fi
 
 #css3FontConverter
-cd $HOME
-git clone https://github.com/zoltan-dulac/css3FontConverter.git
-sudo ln -s $HOME/css3FontConverter/convertFonts.sh /usr/local/bin/
+if [ ! -f /usr/local/bin/convertFonts.sh ]; then
+    cd $HOME
+    git clone https://github.com/zoltan-dulac/css3FontConverter.git
+    sudo ln -s $HOME/css3FontConverter/convertFonts.sh /usr/local/bin/
+fi
 
 # Update locales
 sudo locale-gen fr_CA
