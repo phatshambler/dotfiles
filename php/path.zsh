@@ -1,3 +1,2 @@
-export COMPOSER_BIN_PATH="/Users/nicolasroy/.composer/vendor/bin"
-export PHP_PATH="$(brew --prefix php@7.4)/bin"
-# export PATH="$COMPOSER_BIN_PATH:$PHP_PATH:$PATH"
+export COMPOSER_BIN_PATH="/Users/$(whoami)/.composer/vendor/bin"
+export PATH="$COMPOSER_BIN_PATH:$PATH"

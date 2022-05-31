@@ -1,5 +1,3 @@
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-
-pip install --upgrade pip setuptools
+pip3 install --upgrade pip setuptools
 
 exit 0
