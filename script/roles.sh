@@ -22,12 +22,13 @@ has_role () {
 }
 
 # topic_enabled <topic dir>: true when the topic has no .roles file, or when
-# one of the roles listed in its .roles file is a role of this machine.
+# one of the roles listed in its .roles file (one per line) is a role of this
+# machine. Uses `read` rather than `cat` to stay fast at shell startup.
 topic_enabled () {
   [ -f "$1/.roles" ] || return 0
-  for role in $(cat "$1/.roles")
+  while IFS= read -r role || [ -n "$role" ]
   do
-    has_role "$role" && return 0
-  done
+    [ -n "$role" ] && has_role "$role" && return 0
+  done < "$1/.roles"
   return 1
 }

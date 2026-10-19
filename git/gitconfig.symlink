@@ -14,7 +14,7 @@
         ui = true
 [core]
         excludesfile = ~/.gitignore
-	editor = nvim
+        editor = nvim
 [apply]
         whitespace = nowarn
 [mergetool]
@@ -30,14 +30,9 @@
         # Setting to git 2.0 default to suppress warning message
         default = simple
 [filter "lfs"]
-	clean = git lfs clean %f
-	smudge = git lfs smudge %f
-        process = git-lfs filter-process
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
 	required = true
-[user]
-	name = Nicolas Roy
-        email = phatshambler@gmail.com
-[pull]
-	rebase = false
 [init]
 	defaultBranch = main

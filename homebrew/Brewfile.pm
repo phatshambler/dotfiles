@@ -1,8 +1,4 @@
-# Chargés de projet: communication, time tracking and design review.
+# Chargés de projet (Figma and Harvest are in Brewfile.base).
 cask_args appdir: '/Applications'
 
-cask 'figma'
-cask 'harvest'
 cask 'poedit'
-cask 'rectangle'
-cask 'slack'

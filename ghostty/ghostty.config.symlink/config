@@ -1,0 +1,8 @@
+background-opacity = 0.85
+unfocused-split-opacity = 0.35
+theme = dracula
+shell-integration-features = ssh-env,ssh-terminfo
+shell-integration = fish
+background-blur = 2
+
+term = xterm-256color

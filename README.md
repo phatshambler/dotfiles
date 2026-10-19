@@ -57,13 +57,16 @@ There's a few special files in the hierarchy.
 - **topic/completion.zsh**: Any file named `completion.zsh` is loaded
   last and is expected to setup autocomplete.
 - **topic/install.sh**: Any file named `install.sh` is executed when you run `script/install`. To avoid being loaded automatically, its extension is `.sh`, not `.zsh`.
-- **topic/.roles**: Optional. The roles (e.g. `dev`) a topic is meant for.
+- **topic/.roles**: Optional. The roles (e.g. `dev`), one per line, a topic is meant for.
   A topic with a `.roles` file is only loaded, and its `install.sh` only run,
   on machines with one of those roles. Topics without one are for everyone.
 - **topic/\*.symlink**: Any file ending in `*.symlink` gets symlinked into
   your `$HOME`. This is so you can keep all of those versioned in your dotfiles
   but still keep those autoloaded files in your home directory. These get
   symlinked in when you run `script/bootstrap`.
+- **topic/\*.config.symlink**: Same, but into `~/.config` for apps that read
+  their settings there: `ghostty/ghostty.config.symlink` becomes
+  `~/.config/ghostty`.
 
 ## roles
 
@@ -71,7 +74,7 @@ Each machine has one or more roles, stored in `~/.dotfiles-roles`:
 
 - `dev`: developers (languages, databases, Docker, dev apps, and the `php`,
   `node`, `ruby`, `go`… topics)
-- `pm`: chargés de projet (Slack, Harvest, Figma…)
+- `pm`: chargés de projet (Poedit…)
 
 `script/bootstrap` asks for them the first time (default: `dev`). To see or
 change them later, then install what's missing:
