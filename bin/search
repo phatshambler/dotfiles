@@ -4,9 +4,5 @@
 #
 set -e
 
-# use -iru to search directories ack usually ignores (like .git)
-if [ -x /usr/bin/ack-grep ]; then
-    ack-grep -i "$@"
-else
-    ack -i "$@"
-fi
+# use --hidden --no-ignore to search files ripgrep usually ignores (like .git)
+rg -i "$@"
