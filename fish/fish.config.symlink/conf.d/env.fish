@@ -13,3 +13,6 @@ fish_add_path --global \
     /opt/homebrew/opt/python/libexec/bin \
     $HOME/.composer/vendor/bin \
     /opt/homebrew/bin
+
+# Scripts of the dotfiles (git-up, git-copy-branch-name, e, search…)
+fish_add_path --global --append $HOME/.dotfiles/bin

@@ -6,3 +6,10 @@ shell-integration = fish
 background-blur = 2
 
 term = xterm-256color
+
+# Quick terminal: drops down from the top of the screen from any app.
+# Global shortcuts need Ghostty to be allowed in System Settings >
+# Privacy & Security > Accessibility.
+keybind = global:cmd+grave_accent=toggle_quick_terminal
+quick-terminal-position = top
+quick-terminal-autohide = true
