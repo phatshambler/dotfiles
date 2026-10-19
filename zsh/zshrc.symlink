@@ -52,9 +52,19 @@ then
   FPATH="$HOMEBREW_PREFIX/share/zsh/site-functions:${FPATH}"
 fi
 
-# initialize autocomplete here, otherwise functions won't be loaded
+# initialize autocomplete here, otherwise functions won't be loaded.
+# The completion dump is rebuilt (with its security check) once a day; in
+# between, shells reuse it with -C, which is much faster. To pick up new
+# completions right away: rm ~/.zcompdump && reload!
 autoload -U compinit
-compinit
+stale_zcompdump=(${ZDOTDIR:-$HOME}/.zcompdump(N.mh+24))
+if [[ -f ${ZDOTDIR:-$HOME}/.zcompdump ]] && (( ! $#stale_zcompdump ))
+then
+  compinit -C
+else
+  compinit
+fi
+unset stale_zcompdump
 
 # load every completion after autocomplete loads
 for file in ${(M)config_files:#*/completion.zsh}
