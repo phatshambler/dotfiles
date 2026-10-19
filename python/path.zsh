@@ -1,2 +1,2 @@
-# export PYTHONPATH=`brew --prefix`/lib/python2.7/site-packages:$PYTHONPATH
-export PATH="$(brew --prefix python)/libexec/bin:$PATH"
+# Use the unversioned `python`/`pip` from Homebrew
+export PATH="$HOMEBREW_PREFIX/opt/python/libexec/bin:$PATH"

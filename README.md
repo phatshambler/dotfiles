@@ -1,12 +1,14 @@
-# Phat dotfiles
+# dotfiles
+
+Basic dotfiles of folklore, fork to customize
 
 ## procédure
 
-See note
+Voir note sécurisée
 
 ## about
 
-Based on [holman/dmongeau dotfiles](https://github.com/dmongeau/dotfiles)
+Based on [holman](https://github.com/holman/dotfiles) / [dmongeau](https://github.com/dmongeau/dotfiles) dotfiles
 
 Your dotfiles are how you personalize your system. These are mine.
 
@@ -32,36 +34,44 @@ symlinked without extension into `$HOME` when you run `script/bootstrap`.
 
 A lot of stuff. Seriously, a lot of stuff. Check them out in the file browser
 above and see what components may mesh up with you.
-[Fork it](https://github.com/holman/dotfiles/fork), remove what you don't
+[Fork it](https://github.com/folkloreinc/dotfiles/fork), remove what you don't
 use, and build on what you do use.
 
 ## components
 
 There's a few special files in the hierarchy.
 
--   **bin/**: Anything in `bin/` will get added to your `$PATH` and be made
-    available everywhere.
--   **Brewfile**: This is a list of applications for [Homebrew Cask](https://caskroom.github.io) to install: things like Chrome and 1Password and Adium and stuff. Might want to edit this file before running any initial setup.
--   **topic/\*.zsh**: Any files ending in `.zsh` get loaded into your
-    environment.
--   **topic/path.zsh**: Any file named `path.zsh` is loaded first and is
-    expected to setup `$PATH` or similar.
--   **topic/completion.zsh**: Any file named `completion.zsh` is loaded
-    last and is expected to setup autocomplete.
--   **topic/install.sh**: Any file named `install.sh` is executed when you run `script/install`. To avoid being loaded automatically, its extension is `.sh`, not `.zsh`.
--   **topic/\*.symlink**: Any file ending in `*.symlink` gets symlinked into
-    your `$HOME`. This is so you can keep all of those versioned in your dotfiles
-    but still keep those autoloaded files in your home directory. These get
-    symlinked in when you run `script/bootstrap`.
+- **bin/**: Anything in `bin/` will get added to your `$PATH` and be made
+  available everywhere.
+- **Brewfile**: This is a list of command-line tools and applications for [Homebrew](https://brew.sh) (via `brew bundle`) to install: things like Chrome and 1Password and stuff. Might want to edit this file before running any initial setup.
+- **topic/\*.zsh**: Any files ending in `.zsh` get loaded into your
+  environment.
+- **topic/path.zsh**: Any file named `path.zsh` is loaded first and is
+  expected to setup `$PATH` or similar.
+- **topic/completion.zsh**: Any file named `completion.zsh` is loaded
+  last and is expected to setup autocomplete.
+- **topic/install.sh**: Any file named `install.sh` is executed when you run `script/install`. To avoid being loaded automatically, its extension is `.sh`, not `.zsh`.
+- **topic/\*.symlink**: Any file ending in `*.symlink` gets symlinked into
+  your `$HOME`. This is so you can keep all of those versioned in your dotfiles
+  but still keep those autoloaded files in your home directory. These get
+  symlinked in when you run `script/bootstrap`.
 
 ## install
+
+You'll need the Xcode Command Line Tools first (`xcode-select --install`).
+Homebrew is installed for you if it's missing (in `/opt/homebrew` on Apple
+Silicon).
 
 Run this:
 
 ```sh
-git clone https://github.com/holman/dotfiles.git ~/.dotfiles
+
+git clone https://github.com/folkloreinc/dotfiles.git ~/.dotfiles
+
 cd ~/.dotfiles
+
 script/bootstrap
+
 ```
 
 This will symlink the appropriate files in `.dotfiles` to your home directory.
@@ -79,11 +89,11 @@ this script in `bin/`.
 
 I want this to work for everyone; that means when you clone it down it should
 work for you even though you may not have `rbenv` installed, for example. That
-said, I do use this as _my_ dotfiles, so there's a good chance I may break
+said, I do use this as *my* dotfiles, so there's a good chance I may break
 something if I forget to make a check for a dependency.
 
 If you're brand-new to the project and run into any blockers, please
-[open an issue](https://github.com/holman/dotfiles/issues) on this repository
+[open an issue](https://github.com/folkloreinc/dotfiles/issues) on this repository
 and I'd love to get it fixed for you!
 
 ## thanks

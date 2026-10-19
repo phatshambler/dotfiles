@@ -3,6 +3,7 @@
 alias art='php artisan'
 alias art-migrate='php artisan migrate'
 alias art-migrate-new='php artisan migrate-new'
+alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 
 alias use-php8='brew unlink php@8.3 && brew link php --force && composer global update && valet use php --force'
 alias use-php83='brew unlink php && brew link php@8.3 --force && composer global update && valet use php@8.3 --force'
