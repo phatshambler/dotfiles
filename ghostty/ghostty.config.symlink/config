@@ -1,0 +1,16 @@
+# Ghostty: https://ghostty.org/docs/config
+# `ghostty +show-config --default --docs` lists every option.
+# Symlinked to ~/.config/ghostty by script/bootstrap.
+
+# Follow macOS light/dark mode
+theme = light:Catppuccin Latte,dark:Catppuccin Mocha
+font-size = 14
+
+# Option acts as Meta (Option+arrows jump words in zsh)
+macos-option-as-alt = left
+
+# Keep working colors and key bindings over SSH on servers that don't know
+# xterm-ghostty
+shell-integration-features = ssh-env,ssh-terminfo
+
+window-save-state = always
