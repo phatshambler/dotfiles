@@ -43,7 +43,13 @@ There's a few special files in the hierarchy.
 
 - **bin/**: Anything in `bin/` will get added to your `$PATH` and be made
   available everywhere.
-- **Brewfile**: This is a list of command-line tools and applications for [Homebrew](https://brew.sh) (via `brew bundle`) to install: things like Chrome and 1Password and stuff. Might want to edit this file before running any initial setup.
+- **homebrew/Brewfile.\***: Lists of command-line tools and applications for
+  [Homebrew](https://brew.sh) (via `brew bundle`) to install. `Brewfile.base`
+  is installed everywhere, `Brewfile.<role>` only on machines with that role
+  (see [roles](#roles)).
+- **Brewfile.local**: Optional, at the root. Your own additions, installed
+  after the shared Brewfiles. Keep personal packages here in your fork so
+  merges from upstream don't conflict.
 - **topic/\*.zsh**: Any files ending in `.zsh` get loaded into your
   environment.
 - **topic/path.zsh**: Any file named `path.zsh` is loaded first and is
@@ -51,10 +57,33 @@ There's a few special files in the hierarchy.
 - **topic/completion.zsh**: Any file named `completion.zsh` is loaded
   last and is expected to setup autocomplete.
 - **topic/install.sh**: Any file named `install.sh` is executed when you run `script/install`. To avoid being loaded automatically, its extension is `.sh`, not `.zsh`.
+- **topic/.roles**: Optional. The roles (e.g. `dev`) a topic is meant for.
+  A topic with a `.roles` file is only loaded, and its `install.sh` only run,
+  on machines with one of those roles. Topics without one are for everyone.
 - **topic/\*.symlink**: Any file ending in `*.symlink` gets symlinked into
   your `$HOME`. This is so you can keep all of those versioned in your dotfiles
   but still keep those autoloaded files in your home directory. These get
   symlinked in when you run `script/bootstrap`.
+
+## roles
+
+Each machine has one or more roles, stored in `~/.dotfiles-roles`:
+
+- `dev`: developers (languages, databases, Docker, dev apps, and the `php`,
+  `node`, `ruby`, `go`… topics)
+- `pm`: chargés de projet (Slack, Harvest, Figma…)
+
+`script/bootstrap` asks for them the first time (default: `dev`). To see or
+change them later, then install what's missing:
+
+```sh
+dot --roles            # show
+dot --roles "dev pm"   # set
+script/install
+```
+
+To add a role, create `homebrew/Brewfile.<role>` and list the role in the
+`.roles` file of the topics it needs.
 
 ## install
 

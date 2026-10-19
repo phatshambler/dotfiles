@@ -6,9 +6,30 @@ set -e
 
 cd "$(dirname $0)"/..
 
-# Run Homebrew through the Brewfile
-echo "› brew bundle"
-brew bundle
+# Roles of this machine: has_role, topic_enabled
+. script/roles.sh
 
-# find the installers and run them iteratively
-find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
+brew_bundle () {
+  if [ -f "$1" ]
+  then
+    echo "› brew bundle --file=$1"
+    brew bundle --file="$1"
+  fi
+}
+
+# Run Homebrew through the Brewfiles: everyone, each role, then personal
+brew_bundle homebrew/Brewfile.base
+for role in $DOTFILES_ROLES
+do
+  brew_bundle "homebrew/Brewfile.$role"
+done
+brew_bundle Brewfile.local
+
+# find the installers of the enabled topics and run them iteratively
+find . -name install.sh | while read installer
+do
+  if topic_enabled "$(echo "$installer" | cut -d/ -f2)"
+  then
+    sh -c "${installer}"
+  fi
+done

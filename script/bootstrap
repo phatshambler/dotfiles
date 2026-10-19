@@ -49,6 +49,27 @@ setup_gitconfig () {
   fi
 }
 
+setup_roles () {
+  if ! [ -f "$HOME/.dotfiles-roles" ]
+  then
+    info 'setup roles'
+
+    local available=$(ls homebrew/Brewfile.* | sed 's#homebrew/Brewfile\.##' | grep -v '^base$' | tr '\n' ' ')
+
+    user " - What are the roles of this machine? (${available% }, default: dev)"
+    read -e roles
+    roles=${roles:-dev}
+
+    for role in $roles
+    do
+      [ -f "homebrew/Brewfile.$role" ] || fail "unknown role: $role"
+    done
+
+    echo "$roles" > "$HOME/.dotfiles-roles"
+
+    success "roles: $roles"
+  fi
+}
 
 link_file () {
   local src=$1 dst=$2
@@ -138,6 +159,7 @@ install_dotfiles () {
 }
 
 setup_gitconfig
+setup_roles
 install_dotfiles
 
 # If we're on a Mac, let's install and setup homebrew.

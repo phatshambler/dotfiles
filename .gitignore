@@ -2,5 +2,7 @@ git/gitconfig.local.symlink
 
 npm_debug.log
 
+Brewfile*.lock.json
+
 homestead.symlink/Homestead.yaml
 homestead.symlink/after.sh
