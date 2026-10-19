@@ -74,7 +74,7 @@ Each machine has one or more roles, stored in `~/.dotfiles-roles`:
 
 - `dev`: developers (languages, databases, Docker, dev apps, and the `php`,
   `node`, `ruby`, `go`… topics)
-- `pm`: chargés de projet (Slack, Harvest, Figma…)
+- `pm`: chargés de projet (Poedit…)
 
 `script/bootstrap` asks for them the first time (default: `dev`). To see or
 change them later, then install what's missing:
