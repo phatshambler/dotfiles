@@ -5,11 +5,13 @@ tap 'hashicorp/tap'
 tap 'shivammathur/php'
 
 brew 'curl'
+brew 'fish'
 brew 'fzf'
 brew 'hashicorp/tap/packer'
 brew 'numpy'
 brew 'php@8.3'
 brew 'php@8.4'
+brew 'pyenv'
 brew 'shivammathur/php/php@7.4'
 
 cask 'arduino-ide'
