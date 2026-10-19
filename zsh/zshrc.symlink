@@ -94,3 +94,5 @@ export ARTILLERY_DISABLE_TELEMETRY=false
 autoload -U promptinit;
 promptinit
 eval "$(starship init zsh)"
+
+. "$HOME/.local/bin/env"

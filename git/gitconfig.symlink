@@ -16,7 +16,7 @@
         ui = true
 [core]
         excludesfile = ~/.gitignore
-        editor = vi
+	editor = nvim
 [apply]
         whitespace = nowarn
 [mergetool]
@@ -41,7 +41,7 @@
         process = git-lfs filter-process
 	required = true
 [user]
-	name = Nicolas Roy B.
+	name = Nicolas Roy
         email = phatshambler@gmail.com
 [pull]
 	rebase = false
