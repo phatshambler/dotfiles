@@ -1,12 +1,18 @@
+# Default node version on the PATH, without loading nvm (see load_nvm for
+# .nvmrc support)
+_nvm_use_default
+
+# pyenv's python first (see conf.d/pyenv.fish)
+fish_add_path --global --move --path $PYENV_ROOT/shims
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
-    eval (starship init fish)
-    load_nvm > /dev/stderr
+    starship init fish | source
+    load_nvm
 end
 
-alias brew="env PATH=(string replace (pyenv root)/shims '' \"\$PATH\") brew"
-
-pyenv init - fish | source
+# Keep pyenv's python out of Homebrew builds
+alias brew="env PATH=(string replace $PYENV_ROOT/shims '' \"\$PATH\") brew"
 
 # Added by Antigravity
 # fish_add_path /Users/nicolas/.antigravity/antigravity/bin
