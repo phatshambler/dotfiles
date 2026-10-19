@@ -17,6 +17,7 @@ displayUsageAndExit() {
 	echo ""
 	echo "Options:"
 	echo "  -e, --edit    Open dotfiles directory for editing"
+	echo "  -r, --roles   Show this machine's roles, or set them (e.g. dot -r \"dev pm\")"
 	echo "  -h, --help    Show this help message and exit"
 	exit
 }
@@ -28,6 +29,22 @@ while test $# -gt 0; do
 			;;
 		"-e"|"--edit")
 			exec "$EDITOR" "$dotfilesDirectory"
+			exit
+			;;
+		"-r"|"--roles")
+			if [ -n "$2" ]
+			then
+				for role in $2
+				do
+					if [ ! -f "$dotfilesDirectory/homebrew/Brewfile.$role" ]
+					then
+						echo "Unknown role: $role"
+						exit 1
+					fi
+				done
+				echo "$2" > "$HOME/.dotfiles-roles"
+			fi
+			cat "$HOME/.dotfiles-roles" 2>/dev/null || echo "dev (default)"
 			exit
 			;;
 		*)

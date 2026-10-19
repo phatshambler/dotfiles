@@ -1,0 +1,18 @@
+# Installed on every machine, whatever the role.
+# Role-specific packages go in homebrew/Brewfile.<role>.
+cask_args appdir: '/Applications'
+
+brew 'coreutils'
+brew 'git'
+brew 'grc'
+brew 'starship'
+brew 'wget'
+brew 'zsh'
+
+cask '1password'
+cask 'arq'
+cask 'firefox'
+cask 'google-chrome'
+cask 'spotify'
+cask 'vlc'
+cask 'zoom'

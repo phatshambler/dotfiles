@@ -12,6 +12,9 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+# Roles of this machine: has_role
+. "$(dirname "$0")/../script/roles.sh"
+
 ###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
@@ -219,8 +222,11 @@ defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
-# Finder: show hidden files by default
-defaults write com.apple.finder AppleShowAllFiles -bool true
+# Finder: show hidden files by default (devs only)
+if has_role dev
+then
+  defaults write com.apple.finder AppleShowAllFiles -bool true
+fi
 
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
@@ -292,8 +298,11 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 # Enable AirDrop over Ethernet and on unsupported Macs running Lion
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 
-# Show the ~/Library folder
-chflags nohidden ~/Library
+# Show the ~/Library folder (devs only)
+if has_role dev
+then
+  chflags nohidden ~/Library
+fi
 
 # Show the /Volumes folder
 sudo chflags nohidden /Volumes
@@ -351,8 +360,11 @@ defaults write com.apple.dock autohide -bool true
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
 
-# Add iOS Simulator to Launchpad
-sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app" "/Applications/Simulator.app"
+# Add iOS Simulator to Launchpad (devs with Xcode only)
+if has_role dev && [ -d /Applications/Xcode.app ]
+then
+  sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app" "/Applications/Simulator.app"
+fi
 
 # Hot corners
 # Possible values:

@@ -2,4 +2,4 @@ git/gitconfig.local.symlink
 
 npm_debug.log
 
-Brewfile.lock.json
+Brewfile*.lock.json

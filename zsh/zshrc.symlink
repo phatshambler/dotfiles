@@ -21,9 +21,19 @@ then
   source ~/.localrc
 fi
 
-# all of our zsh files
+# roles of this machine: has_role, topic_enabled (see script/roles.sh)
+source $ZSH/script/roles.sh
+
+# all of our zsh files, from the topics enabled for this machine's roles
 typeset -U config_files
-config_files=($ZSH/**/*.zsh)
+config_files=()
+for file in $ZSH/**/*.zsh
+do
+  if topic_enabled $ZSH/${${file#$ZSH/}%%/*}
+  then
+    config_files+=($file)
+  fi
+done
 
 # load the path files
 for file in ${(M)config_files:#*/path.zsh}
