@@ -29,7 +29,6 @@ brew 'transmission-cli'
 brew 'uv'
 brew 'wakeonlan'
 brew 'yt-dlp'
-brew 'neovim'
 
 cask '1password-cli'
 cask 'cyberduck'
