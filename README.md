@@ -57,7 +57,7 @@ There's a few special files in the hierarchy.
 - **topic/completion.zsh**: Any file named `completion.zsh` is loaded
   last and is expected to setup autocomplete.
 - **topic/install.sh**: Any file named `install.sh` is executed when you run `script/install`. To avoid being loaded automatically, its extension is `.sh`, not `.zsh`.
-- **topic/.roles**: Optional. The roles (e.g. `dev`) a topic is meant for.
+- **topic/.roles**: Optional. The roles (e.g. `dev`), one per line, a topic is meant for.
   A topic with a `.roles` file is only loaded, and its `install.sh` only run,
   on machines with one of those roles. Topics without one are for everyone.
 - **topic/\*.symlink**: Any file ending in `*.symlink` gets symlinked into
